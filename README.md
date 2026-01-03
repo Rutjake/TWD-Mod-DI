@@ -38,17 +38,17 @@ The recommended method is using the `out` folder. This keeps your original game 
 ### [EN] Instructions
 1. Locate your game installation folder (e.g., `...\Steam\steamapps\common\Dead Island Riptide Definitive Edition`).
 2. Navigate to the `DIR\out` folder. **If it doesn't exist, create it.**
-3. Create the following folder structure inside `out`: `Data\AI\Zombie`.
-   * Final path: `...\out\Data\AI\Zombie\`
-4. Copy the `.scr` files from this repository into the `Zombie` folder.
+3. Create the following folder structure inside `out`: `data\ai\zombie`.
+   * Final path: `...\out\data\ai\zombie\`
+4. Copy the `.scr` files from this repository into the `zombie` folder.
 5. Launch the game. The engine will now prioritize these files over the original `.pak` data.
 
 ### [FI] Ohjeet
 1. Etsi pelin asennuskansio (esim. `...\Steam\steamapps\common\Dead Island Riptide Definitive Edition`).
 2. Mene kansioon `DIR\out`. **Jos kansiota ei ole, luo se.**
-3. Luo `out`-kansion sisälle seuraava polku: `Data\AI\Zombie`.
-   * Lopullinen polku: `...\out\Data\AI\Zombie\`
-4. Kopioi tämän modin `.scr`-tiedostot luomaasi `Zombie`-kansioon.
+3. Luo `out`-kansion sisälle seuraava polku: `data\ai\zombie`.
+   * Lopullinen polku: `...\out\data\ai\zombie\`
+4. Kopioi tämän modin `.scr`-tiedostot luomaasi `zombie`-kansioon.
 5. Käynnistä peli. Peli lukee nyt muokatut tiedostot `out`-kansiosta alkuperäisten sijasta.
 
 > **Note:** To uninstall, simply delete the files from the `out` folder. / **Huom:** Poistaaksesi modin, poista vain tiedostot `out`-kansiosta.
@@ -62,7 +62,7 @@ The recommended method is using the `out` folder. This keeps your original game 
 
 **Full installation**:
 1. **Extract** `Data0.pak` from your game folder. (Remember to save a backup of the original file on your computer.)
-2. **Replace** the original `.scr` files in `AI/Zombie` with the modded versions.
+2. **Replace** the original `.scr` files in `data\ai\zombie` with the modded versions.
 3. **Repack** the `.pak` file or use the `out` folder method (recommended for Definitive Edition).
 
 ---
