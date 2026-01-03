@@ -58,7 +58,7 @@ The recommended method is using the `out` folder. This keeps your original game 
 ## 🛠 Advanced Installation Method
 
 **Quick installation**: 
-1. **Open** `Data0.pak` from your game directory with, for example, 7Zip, and replace the files in the ai/zombie directory.
+1. **Open** `Data0.pak` from your game directory with, for example, 7Zip, and replace the files in the `data\ai\zombie` directory.
 
 **Full installation**:
 1. **Extract** `Data0.pak` from your game folder. (Remember to save a backup of the original file on your computer.)
