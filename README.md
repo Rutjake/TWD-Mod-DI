@@ -45,5 +45,5 @@ This mod transforms the zombies into classic **The Walking Dead** style walkers.
 
 ---
 
-**Author:** [Your Name/Username]  
+**Author:** Jake
 **Game:** Dead Island / Dead Island Riptide (Definitive Editions)
