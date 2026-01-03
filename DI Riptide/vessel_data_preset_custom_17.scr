@@ -1,0 +1,234 @@
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+
+// preset for drowner
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:laying:wait_for_stinger::::", 10, "")		// prevents floating zombie from playing any animation on ragdoll.
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v01")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v02")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v03")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v04")
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+Data("attack:laying::stinger::::", -2, "MZ_Upset_Attack_Stinger_Drowner_V01")
+
+//##################
+//#### ALARMING ####
+//##################
+//## alarming:is_standing:alarm_level
+//##################
+
+//Data("alarming:standing:alarmed::", -2, "m_npc_unarmed_standup_m_03")  
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:walk:calm::::", -2, "mz_a_calm_walk")
+Data("movement:standing:walk:calm::::", -2, "mz_a_calm_walk_v02")
+Data("movement:standing:walk:alarmed::::", -2, "mz_a_upset_walk")
+
+Data("movement:standing:run:calm::::", -2, "mz_a_calm_walk")
+Data("movement:standing:run:calm::::", -2, "mz_a_calm_walk_v02")
+Data("movement:standing:run:alarmed::::", -2, "mz_a_upset_walk")
+
+Data("movement:standing:berserker_grab:alarmed::::", -2, "mz_upset_attack_berserker_catch_v01")
+
+Data("movement:standing:berserker_left_arm:alarmed::::", -2, "mz_upset_attack_berserker_lefthand_v02")
+Data("movement:standing:berserker_left_arm:alarmed::::", -2, "mz_upset_attack_berserker_lefthand_v03")
+Data("movement:standing:berserker_left_arm:alarmed::::", -2, "mz_upset_attack_berserker_lefthand_v04")
+
+//Data("movement:standing:berserker_left_arm_strike:alarmed::::", -2, "mz_left_arm_strike_berserker_v02")
+//Data("movement:standing:berserker_left_arm_strike:alarmed::::", -2, "mz_left_arm_strike_berserker_v03")
+//Data("movement:standing:berserker_left_arm_strike:alarmed::::", -2, "mz_left_arm_strike_berserker_v04")
+
+Data("movement:standing:berserker_right_arm:alarmed::::", -2, "mz_upset_attack_berserker_righthand_v02")
+Data("movement:standing:berserker_right_arm:alarmed::::", -2, "mz_upset_attack_berserker_righthand_v03")
+
+//Data("movement:standing:berserker_right_arm_strike:alarmed::::", -2, "mz_right_arm_strike_berserker_v02")
+//Data("movement:standing:berserker_right_arm_strike:alarmed::::", -2, "mz_right_arm_strike_berserker_v03")
+
+Data("movement:laying:walk:::::", -2, "mz_upset_crawl_forward_v01")
+
+Data("movement:laying:run:::::", -2, "mz_upset_crawl_forward_v01")
+
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_left_v01")
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_right_v01")
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_backward")
+
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_left_v01")
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_right_v01")
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_backward")
+
+//##############
+//#### TURN ####
+//##############
+//## turn:is_standing:alarm_level:item_type:direction:angle
+//##############
+
+Data("turn:standing:::left:45", -2, "mz_a_calm_turn_45_l")
+Data("turn:standing:::right:45", -2, "mz_a_calm_turn_45_r")
+
+Data("turn:standing:::left:90", -2, "mz_a_calm_turn_90_l")
+Data("turn:standing:::right:90", -2, "mz_a_calm_turn_90_r")
+
+Data("turn:standing:::left:180", -2, "mz_a_calm_turn_180_l")
+//Data("turn:standing:::left:180", -2, "mz_a_calm_turn_180_l_v02")
+Data("turn:standing:::right:180", -2, "mz_a_calm_turn_180_r")
+//Data("turn:standing:::right:180", -2, "mz_a_calm_turn_180_r_v02")
+
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("start:standing::::90:left", -2, "mz_a_calm_startwalkturn_90_l")
+Data("start:standing::::90:right", -2, "mz_a_calm_startwalkturn_90_r")
+Data("start:standing::::0:", -2, "mz_a_calm_walk_start")
+Data("start:standing::::180:left", -2, "mz_a_calm_startwalkturn_180_l")
+Data("start:standing::::180:right", -2, "mz_a_calm_startwalkturn_180_r")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:berserker_left_arm:alarmed::::", -2, "mz_upset_attack_berserker_lefthand_v02")
+Data("movement:standing:berserker_left_arm:alarmed::::", -2, "mz_upset_attack_berserker_lefthand_v03")
+Data("movement:standing:berserker_left_arm:alarmed::::", -2, "mz_upset_attack_berserker_lefthand_v04")
+
+//Data("movement:standing:berserker_left_arm_strike:alarmed::::", -2, "mz_left_arm_strike_berserker_v02")
+//Data("movement:standing:berserker_left_arm_strike:alarmed::::", -2, "mz_left_arm_strike_berserker_v03")
+//Data("movement:standing:berserker_left_arm_strike:alarmed::::", -2, "mz_left_arm_strike_berserker_v04")
+
+Data("movement:standing:berserker_right_arm:alarmed::::", -2, "mz_upset_attack_berserker_righthand_v02")
+Data("movement:standing:berserker_right_arm:alarmed::::", -2, "mz_upset_attack_berserker_righthand_v03")
+
+//Data("movement:standing:berserker_right_arm_strike:alarmed::::", -2, "mz_right_arm_strike_berserker_v02")
+//Data("movement:standing:berserker_right_arm_strike:alarmed::::", -2, "mz_right_arm_strike_berserker_v03")
+
+//###########################
+//#### RECOVER FROM FALL ####
+//###########################
+//## recover_from_fall:is_standing
+//###########################
+
+Data("recover_from_fall:standing:", -2, "M_NPC_unarmed_standup_M_03_b")
+Data("recover_from_fall:standing:", -2, "mzi_standup_back01")
+Data("recover_from_fall:standing:", -2, "mzi_standup_back02")
+Data("recover_from_fall:laying:", -2, "M_NPC_unarmed_standup_M_03_b")
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all:front::up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all:front::up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all:front::up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all:left::up:heavy", -2, "mz_upset_stand_hitreaction_torso_left_medium_v01")
+Data("hit_reaction:standing:pain::all:left::up:heavy", -2, "mz_upset_stand_hitreaction_torso_left_medium_v02")
+Data("hit_reaction:standing:pain::all:left::up:heavy", -2, "mz_upset_stand_hitreaction_torso_left_medium_v03")
+Data("hit_reaction:standing:pain::all:left::up:heavy", -2, "mz_upset_stand_hitreaction_torso_left_medium_v03")
+
+Data("hit_reaction:standing:pain::all:right::up:heavy", -2, "mz_upset_stand_hitreaction_torso_right_medium_v01")
+Data("hit_reaction:standing:pain::all:right::up:heavy", -2, "mz_upset_stand_hitreaction_torso_right_medium_v02")
+
+Data("hit_reaction:standing:pain::all::head:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all::head:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all::head:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all::head:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_medium_v02")
+Data("hit_reaction:standing:pain::all::head:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_medium_v04")
+
+Data("hit_reaction:standing:pain::all::head:right:heavy", -2, "mz_upset_stand_hitreaction_head_right_medium_v01")
+Data("hit_reaction:standing:pain::all::head:right:heavy", -2, "mz_upset_stand_hitreaction_head_right_medium_v02")
+Data("hit_reaction:standing:pain::all::head:right:heavy", -2, "mz_upset_stand_hitreaction_head_right_medium_v03")
+
+Data("hit_reaction:standing:pain::all::head:left:heavy", -2, "mz_upset_stand_hitreaction_head_left_medium_v01")
+Data("hit_reaction:standing:pain::all::head:left:heavy", -2, "mz_upset_stand_hitreaction_head_left_medium_v02")
+Data("hit_reaction:standing:pain::all::head:left:heavy", -2, "mz_upset_stand_hitreaction_head_left_medium_v03")
+
+Data("hit_reaction:standing:pain::all::torso:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all::torso:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all::torso:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all::torso:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_medium_v02")
+Data("hit_reaction:standing:pain::all::torso:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_medium_v04")
+
+Data("hit_reaction:standing:pain::all::torso:right:heavy", -2, "mz_upset_stand_hitreaction_torso_right_medium_v01")
+Data("hit_reaction:standing:pain::all::torso:right:heavy", -2, "mz_upset_stand_hitreaction_torso_right_medium_v02")
+
+Data("hit_reaction:standing:pain::all::torso:left:heavy", -2, "mz_upset_stand_hitreaction_torso_left_medium_v01")
+Data("hit_reaction:standing:pain::all::torso:left:heavy", -2, "mz_upset_stand_hitreaction_torso_left_medium_v02")
+
+
+Data("hit_reaction:standing:pain::all::legs:right:heavy", -2, "mz_upset_stand_hitreaction_legs_right_medium_v01")
+Data("hit_reaction:standing:pain::all::legs:right:heavy", -2, "mz_upset_stand_hitreaction_legs_right_medium_v02")
+
+Data("hit_reaction:standing:pain::all::legs:left:heavy", -2, "mz_upset_stand_hitreaction_legs_left_medium_v01")
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamInt("zombie_type", 0)
+ParamBool("is_drowner", 1)
+ParamFloat("drowning_damage", 0.0)
+ParamFloat("walk_speed_calm",0.5)    // Converted
+ParamFloat("walk_speed_alarmed",0.6)    // Converted
+ParamFloat("run_speed_calm",0.6)    // Converted
+ParamFloat("run_speed_alarmed",0.6)    // Converted
+ParamFloat("acceleration",0.6)    // Converted
+ParamFloat("deceleration",0.6)    // Converted
+ParamFloat("berserker_dist",0.0)     // max dist to start berserker while moving    // Converted
+ParamFloat("berserker_min_dist",0.0) // min dist to start berserker while moving    // Converted
+ParamFloat("berserker_right_arm_attack_dist",0.0)    // Converted
+ParamFloat("berserker_left_arm_attack_dist",0.0)    // Converted
+ParamFloat("stamina_regeneration_rate", 0.50)
+ParamBool("always_react_on_kick", 1)
+ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("max_dist_to_stinger",0.0)                    // stinger start max distance    // Converted
+ParamFloat("min_dist_to_stinger",0.0)                     // stinger start min distance    // Converted
+ParamFloat("max_dist_to_stinger_early_wake", 1000.0)        // wake up max distance for early wake
+ParamFloat("max_dist_to_grab",1.4)                       // for check at moment of grabbing    // Converted
+ParamFloat("max_dist_to_grab_passenger_on_boat", 1.0) // Converted
+ParamBool("float_on_water_when_alive", 1)
+ParamBool("can_fall", 1)
+ParamFloat("fall_on_normal_hit_prob", 0.7)
+ParamInt("idle_calm_sound_type", -1)
+ParamFloat("max_sight_range_when_enemy_in_boat",40.0)    // Converted
+
+/********************************************************************************************************************************************************************************************************
+																			Standard params
+********************************************************************************************************************************************************************************************************/
+
+ParamFloat("turn_speed", 120.0)
+

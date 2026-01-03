@@ -1,0 +1,186 @@
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+!include("vessel_sound_types.def")
+
+// preset for a "Wrestler" enemy
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:pain::all::::heavy", -2, "MZ_Wrestler_HitReaction_Medium")
+Data("hit_reaction:standing:pain::all::::medium", -2, "MZ_Wrestler_HitReaction_Light")
+Data("hit_reaction:standing:pain::all::::light", -2, "MZ_Wrestler_HitReaction_Light")
+
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:standing:stand:none:none:none:none", -2, "MZ_Wrestler_Idle_01")
+
+//##################
+//#### ALARMING ####
+//##################
+//## alarming:is_standing:alarm_level
+//##################
+
+//Data("alarming:standing:alarmed::", 1.0, "mz_a_calm_stand_idle_v01")
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+Data("attack:standing::arm_strike_combo::::", 0, "")
+//Data("attack:standing::right_arm_strike::::", -2, "MZ_Wrestler_Attack_Static_01")
+//Data("attack:standing::right_arm_strike::::", -2, "MZ_Wrestler_Attack_Static_01")
+//Data("attack:standing::right_arm_strike::::", -2, "MZ_Wrestler_Attack_Static_02")
+
+Data("attack:standing::taunt::::", 0, "")
+
+Data("attack:standing::fake_low::::", -2, "MZ_Wrestler_Idle_01")
+Data("attack:standing::fake_high::::", -2, "MZ_Wrestler_Idle_01")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:walk:::::", -2, "MZ_Wrestler_Walk_Loop_Dynamic")
+Data("movement:standing:run:::::", -2, "MZ_Wrestler_Run_Loop")
+
+//##############
+//#### TURN ####
+//##############
+//## turn:is_standing:alarm_level:item_type:direction:angle
+//##############
+
+Data("turn:standing:::left:45", -2, "MZ_Wrestler_Turn_45L")
+Data("turn:standing:::right:45", -2, "MZ_Wrestler_Turn_45R")
+
+Data("turn:standing:::left:90", -2, "MZ_Wrestler_Turn_90L")
+Data("turn:standing:::right:90", -2, "MZ_Wrestler_Turn_90R")
+
+Data("turn:standing:::left:180", -2, "mz_b_calm_turn_Slow_180_l")
+Data("turn:standing:::right:180", -2, "MZ_Wrestler_Turn_180R")
+
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("start:standing:::walk:90:left", -2, "MZ_Wrestler_Run_Start_90L")
+Data("start:standing:::walk:90:right", -2, "MZ_Wrestler_Run_Start_90R")
+Data("start:standing:::walk:0:", -2, "MZ_Wrestler_Walk_Start")
+Data("start:standing:::walk:180:left", -2, "MZ_Wrestler_Run_Start_90L")
+Data("start:standing:::walk:180:right", -2, "MZ_Wrestler_Run_Start_90R")
+
+Data("start:standing:::run:90:left", -2, "MZ_Wrestler_Run_Start_90L")
+Data("start:standing:::run:90:right", -2, "MZ_Wrestler_Run_Start_90R")
+Data("start:standing:::run:0:", -2, "MZ_Wrestler_Run_Start_Forward")
+Data("start:standing:::run:180:left", -2, "MZ_Wrestler_Run_Start_90L")
+Data("start:standing:::run:180:right", -2, "MZ_Wrestler_Run_Start_90R")
+
+//##############
+//#### STOP ####
+//##############
+//## stop:end_pose:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("stop:standing:::walk:::false", -2, "MZ_Wrestler_Walk_End")
+Data("stop:standing:::run:::false", -2, "MZ_Wrestler_Run_End")
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////// CURVES //////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Curve(CURVE_KO_PROBABILITY, "zombie_ko_prob_wrestler")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("walk_speed_calm",0.4)    // Converted
+ParamFloat("walk_speed_alarmed",0.4)    // Converted
+ParamFloat("run_speed_calm",0.4)    // Converted
+ParamFloat("run_speed_alarmed",0.4)    // Converted
+ParamFloat("sprint_speed_calm",0.4)    // Converted
+ParamFloat("sprint_speed_alarmed",0.4)    // Converted
+ParamFloat("turn_speed", 40.0)
+ParamFloat("stamina_regeneration_rate", 0.1)
+ParamFloat("medium_severity_threshold", 50.0) //disabled medium hit severity
+ParamFloat("heavy_severity_threshold", 80.0) //disabled heavy hit severity
+ParamBool("always_react_on_kick", 1)
+ParamFloat("decapitation_prob", 1.0)
+ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_ram_prob", 0.0)
+ParamBool("can_fall", 1)
+ParamBool("can_react_on_hit", 1)
+ParamBool("always_react_on_bullet", 1)
+ParamBool("always_react_on_impact", 1)
+ParamFloat("min_time_btw_hit_reactions", 0.5)
+ParamBool("react_to_bullet_as_often_as_hit", 1)
+ParamBool("force_counter_on_kick", 0)
+ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_push_prob_mul", 0.0)
+ParamFloat("counter_combo_prob_mul", 0.0)
+ParamFloat("counterattack_dist",0.0)    // Converted
+ParamFloat("counterattack_angle", 0.0)
+ParamFloat("melee_range",0.0)    // Converted
+ParamFloat("bite_range",1.2)    // Converted
+ParamFloat("bite_damage_mul", 0.5)
+ParamFloat("min_time_btw_attack_from_stand_attempts", 2.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 10.0)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
+ParamFloat("taunt_prob", 0.0)
+ParamFloat("taunt_prob_on_target_change", 0.0)
+ParamFloat("random_taunt_prob", 0.0)
+ParamBool("melee_attack_only_when_facing_target", 0)
+ParamFloat("ellipsoid_size_mul", 1.7)
+ParamInt("zombie_type", 9)
+ParamFloat("health_mul", 1.0)
+ParamFloat("stamina_mul", 0.1)
+ParamFloat("damage_mul", 1.0)
+ParamFloat("physics_damage", 0.0)
+ParamFloat("experience_mul", 2.0)
+ParamInt("max_severity", 3)
+ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
+ParamFloat("interior_sight_range",6.0)    // Converted
+ParamFloat("exterior_sight_range",10.0)    // Converted
+ParamBool("use_anim_speed_to_move", 0)
+ParamBool("use_anim_speed_to_walk", 0)
+ParamBool("can_strike_from_stand", 0)
+ParamBool("can_attack_from_move", 1)
+ParamBool("limb_cut_by_direct_hit", 1)
+ParamFloat("head_health_influence", 20.0))
+ParamFloat("left_arm_health_influence", 1.0)
+ParamFloat("right_arm_health_influence", 1.0)
+ParamFloat("left_leg_health_influence", 1.0)
+ParamFloat("right_leg_health_influence", 1.0)
+ParamFloat("torso_front_health_influence", 1.0)
+ParamFloat("torso_back_health_influence", 1.0)
+ParamBool("use_anim_speed_to_walk", 0)
+ParamFloat("min_time_btw_melee_attacks", 10.0)
+ParamBool("arms_can_be_cut_off", 1)
+ParamFloat("wrestler_not_default_hand_attack_mul", 0.0)
+ParamFloat("fall_on_normal_hit_prob", 1.0)
+
+// resistance
+ParamBool("cannot_be_attacked_by_jump_down_attack", 0)
+ParamBool("fall_on_head_collision", 1)
+
+ParamBool("attack_enabled", 1)
+ParamFloat("threat_level", 0)

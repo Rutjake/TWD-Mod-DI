@@ -1,0 +1,66 @@
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+!include("vessel_sound_types.def")
+
+/********************************************************************************************************************************************************************************************************
+																			Vessel during the "bunker defence" quest
+********************************************************************************************************************************************************************************************************/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:climb:::::", -2, "mzi_upset_climb_01")
+Data("movement:standing:jump_down:::::", -2, "mzi_upset_jump_down_01")
+Data("movement:standing:jump_on:::::", -2, "mzi_upset_jump_on")
+Data("movement:standing:jump_off:::::", -2, "mzi_upset_jump_off")
+Data("movement:standing:jump_over_high:::::", -2, "mzi_upset_climb_01")
+Data("movement:standing:jump_over_low_high:::::", -2, "mzi_upset_jump_over_low_01")
+Data("movement:standing:jump_over_low:::::", -2, "mzi_upset_jump_over_low_01")
+Data("movement:standing:jump_over_low:::::", -2, "mzi_upset_jump_over_low_02")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("drowning_damage", 0.0)
+
+ParamFloat("max_dist_to_grab_from_stand",5.0)            // grab from stand start max distance    // Converted
+ParamFloat("min_dist_to_grab_from_stand",0.1)             // grab from stand start min distance    // Converted
+ParamFloat("max_dist_to_grab",1.4)                       // for check at the moment of grabbing    // Converted
+
+ParamBool("ignore_enemies_that_are_grabbed", 1)
+ParamInt("ignore_enemies_with_more_attackers_than", 1)
+
+ParamFloat("navi_mesh_sight_range",40.0)    // Converted
+ParamFloat("max_time_to_complete_combustion", 240.0)
+
+ParamBool("can_climb", 1)
+ParamBool("can_use_nav_mesh_connections", 1)
+ParamBool("can_fall_from_edge", 1)
+
+ParamFloat("min_jump_on_height",0.0)    // Converted
+ParamFloat("max_jump_on_height",0.0)    // Converted
+ParamFloat("nav_mesh_path_max_connection_height",0.0)    // Converted
+ParamFloat("max_jump_over_dist",0.0)    // Converted
+ParamFloat("min_jump_down_height",0.0)    // Converted
+
+/********************************************************************************************************************************************************************************************************
+																			Standard params
+********************************************************************************************************************************************************************************************************/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamBool("arms_can_be_cut_off", 1)

@@ -1,0 +1,100 @@
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+!include("vessel_sound_types.def")
+
+/********************************************************************************************************************************************************************************************************
+																			Vessel on a ferry
+********************************************************************************************************************************************************************************************************/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+
+//##################
+//#### ALARMING ####
+//##################
+//## alarming:is_standing:alarm_level
+//##################
+
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:climb:::::", -2, "mzi_upset_climb_01")
+Data("movement:standing:jump_down:::::", -2, "mzi_upset_jump_down_01")
+Data("movement:standing:jump_on:::::", -2, "mzi_upset_jump_on")
+Data("movement:standing:jump_off:::::", -2, "mzi_upset_jump_off")
+Data("movement:standing:jump_over_high:::::", -2, "mzi_upset_climb_01")
+Data("movement:standing:jump_over_low_high:::::", -2, "mzi_upset_jump_over_low_01")
+Data("movement:standing:jump_over_low:::::", -2, "mzi_upset_jump_over_low_01")
+Data("movement:standing:jump_over_low:::::", -2, "mzi_upset_jump_over_low_02")
+
+//##############
+//#### TURN ####
+//##############
+//## turn:is_standing:alarm_level:item_type:direction:angle
+//##############
+
+
+
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamBool("can_climb", 1)
+ParamBool("can_use_nav_mesh_connections", 1)
+ParamFloat("nav_mesh_path_max_connection_height",4.0)    // Converted
+ParamBool("can_fall_from_edge", 1)
+
+ParamFloat("min_jump_on_height",0.01)    // Converted
+ParamFloat("max_jump_on_height",4.0)    // Converted
+ParamFloat("max_jump_over_dist",2.0)    // Converted
+ParamFloat("min_jump_down_height",0.0)    // Converted
+
+ParamFloat("drowning_damage", 1.0)
+
+ParamFloat("max_dist_to_grab_from_stand",1.2)            // grab from stand start max distance    // Converted
+ParamFloat("min_dist_to_grab_from_stand",0.1)             // grab from stand start min distance    // Converted
+ParamFloat("max_dist_to_grab",0.8)                       // for check at the moment of grabbing    // Converted
+
+ParamBool("ignore_enemies_that_are_grabbed", 1)
+ParamInt("ignore_enemies_with_more_attackers_than", 1)
+
+ParamFloat("max_dynamic_path_angle", 45.0)
+ParamBool("check_enemy_reachable", 0)
+
+ParamFloat("melee_range_y",5.2)    // Converted
+
+// resistance
+ParamBool("fall_on_head_collision", 1)

@@ -1,0 +1,160 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////	 SCREAMER
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+!include("vessel_sound_types.def")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Curve(CURVE_KO_PROBABILITY, "zombie_ko_prob")
+
+ParamInt("zombie_type", 7)
+ParamFloat("max_dist_to_grab",1.4)    // Converted
+
+ParamFloat("scream_attack_range", 0.0)
+ParamFloat("screamer_max_distance_from_enemy_to_not_runaway", 0.0)
+
+ParamBool("can_use_attractors", 0)
+
+ParamFloat("melee_range",0.0)    // Converted
+ParamFloat("min_time_btw_attack_from_stand_attempts", 2.0)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 5.0)
+ParamFloat("taunt_prob", 0.0)
+ParamFloat("taunt_prob_on_target_change", 0.0)
+ParamFloat("random_taunt_prob", 0.0)
+ParamFloat("max_dist_to_stinger",0.0)    // Converted
+
+ParamFloat("walk_speed_calm",0.4)    // Converted
+ParamFloat("walk_speed_alarmed",0.4)    // Converted
+ParamFloat("run_speed_calm",0.4)    // Converted
+ParamFloat("run_speed_alarmed",0.4)    // Converted
+ParamFloat("turn_speed", 60.0)
+ParamFloat("stamina_regeneration_rate", 0.1)
+ParamFloat("medium_severity_threshold", 50.0) //disabled medium hit severity
+ParamFloat("heavy_severity_threshold", 80.0) //disabled heavy hit severity
+ParamBool("always_react_on_kick", 1)
+ParamFloat("decapitation_prob", 1.0)
+ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_ram_prob", 0.0)
+ParamBool("can_fall", 1)
+ParamBool("can_react_on_hit", 1)
+ParamFloat("bite_range",1.2)    // Converted
+ParamFloat("bite_damage_mul", 0.5)
+ParamFloat("health_mul", 1.0)
+ParamFloat("stamina_mul", 1.0)
+ParamFloat("damage_mul", 1.0)
+ParamFloat("physics_damage", 50.0)
+ParamFloat("experience_mul", 12.0)
+ParamInt("max_severity", 3)
+ParamFloat("min_time_btw_hit_reactions", 0.5)
+ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
+ParamBool("force_counter_on_kick", 0)
+ParamFloat("counter_attack_prob_mul", 0.0)
+ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_push_prob_mul", 0.0)
+ParamFloat("counter_combo_prob_mul", 0.0)
+ParamFloat("combo_prob_mul", 0.0)
+
+ParamFloat("scream_duration", 0.0)
+ParamFloat("time_btw_screams", 9999.0)
+ParamBool("attack_enabled", 1)
+ParamFloat("threat_level", 1)
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all:front::up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all:front::up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all:front::up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all::head:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all::head:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all::head:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all::head:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_heavy_v01")
+Data("hit_reaction:standing:pain::all::head:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_heavy_v02")
+Data("hit_reaction:standing:pain::all::head:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_heavy_v03")
+
+Data("hit_reaction:standing:pain::all::head:right:heavy", -2, "mz_upset_stand_hitreaction_torso_right_heavy_v02")
+Data("hit_reaction:standing:pain::all::head:right:heavy", -2, "mz_upset_stand_hitreaction_torso_right_heavy_v03")
+
+Data("hit_reaction:standing:pain::all::head:left:heavy", -2, "mz_upset_stand_hitreaction_head_left_heavy_v01")
+Data("hit_reaction:standing:pain::all::head:left:heavy", -2, "mz_upset_stand_hitreaction_head_left_heavy_v02")
+
+Data("hit_reaction:standing:pain::all::torso:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v01")
+Data("hit_reaction:standing:pain::all::torso:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v02")
+Data("hit_reaction:standing:pain::all::torso:up:heavy", -2, "mz_upset_stand_hitreaction_head_up_medium_v03")
+
+Data("hit_reaction:standing:pain::all::torso:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_heavy_v01")
+Data("hit_reaction:standing:pain::all::torso:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_heavy_v02")
+Data("hit_reaction:standing:pain::all::torso:down:heavy", -2, "mz_upset_stand_hitreaction_head_down_heavy_v03")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// movement
+
+Data("movement:standing:walk:::::", -2, "screamer_run_loop")
+Data("movement:standing:run:::::", -2, "screamer_run_loop")
+Data("movement:standing:sprint:::::", -2, "screamer_run_loop")
+
+Data("start:standing:::walk:90:left", -2, "screamer_walk_start90L")
+Data("start:standing:::walk:90:right", -2, "screamer_walk_start90R")
+Data("start:standing:::walk:0:", -2, "screamer_walk_start")
+Data("start:standing:::walk:180:right", -2, "screamer_walk_start180R")
+Data("start:standing:::walk:180:left", -2, "screamer_walk_start180L")
+
+Data("stop:standing:::walk:0::false", -2, "screamer_walk_stop")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Turning
+
+Data("turn:standing:::left:90", -2, "screamer_walk_start90L")
+Data("turn:standing:::right:90", -2, "screamer_walk_start90R")
+Data("turn:standing:::left:180", -2, "screamer_walk_start180L")
+Data("turn:standing:::right:180", -2, "screamer_walk_start180R")
+
+Data("start:standing::::90:left", -2, "screamer_walk_start90L")
+Data("start:standing::::90:right", -2, "screamer_walk_start90R")
+Data("start:standing::::0:", -2, "screamer_walk_start")
+Data("start:standing::::180:left", -2, "screamer_walk_start180L")
+Data("start:standing::::180:right", -2, "screamer_walk_start180R")
+
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+//Data("attack:standing::left_arm_strike::::", -2, "mz_screamer_attack")
+//Data("attack:standing::right_arm_strike::::", -2, "mz_screamer_special_attack")
+//Data("attack:standing:none:arm_strike_combo:::none:none", -2, "mz_screamer_arm_strike_combo")
+
+Data("attack:standing::fake_low::::", 0, "")
+Data("attack:standing::fake_high::::", 0, "")
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v01")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v02")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v03")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v04")
+
+// resistance
+ParamBool("cannot_be_attacked_by_jump_down_attack", 0)
+ParamBool("fall_on_head_collision", 1)
