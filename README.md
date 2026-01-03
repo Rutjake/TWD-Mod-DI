@@ -32,6 +32,9 @@ This mod transforms the zombies into classic **The Walking Dead** style walkers.
 
 ## 🛠 Installation
 
+**Quick installation**: Open Data0.pak from your game directory with, for example, 7Zip, and replace the files in the ai/zombie directory.
+
+**Full installation**:
 1. **Extract** `Data0.pak` from your game folder. (Remember to save a backup of the original file on your computer.)
 2. **Replace** the original `.scr` files in `AI/Zombie` with the modded versions.
 3. **Repack** the `.pak` file or use the `out` folder method (recommended for Definitive Edition).
