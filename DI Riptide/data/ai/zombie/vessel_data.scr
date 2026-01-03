@@ -903,7 +903,7 @@ ParamFloat("fall_on_normal_hit_prob", 0.3)
 ParamFloat("time_to_not_attack_after_spawn", 0.0)
 
 ParamFloat("min_distance_to_perform_leap_attack",0.0)    // Converted
-ParamFloat("max_distance_to_perform_leap_attack",0..0)    // Converted
+ParamFloat("max_distance_to_perform_leap_attack",0.0)    // Converted
 ParamFloat("max_dir_diff_degrees_to_perform_leap_attack", 0.0)
 ParamFloat("max_jump_grab_distance",0.0)    // Converted
 ParamFloat("max_jump_grab_angle", 0.0)
@@ -923,5 +923,4 @@ ParamFloat("max_time_btw_throwable_use", -1.0)
 ParamFloat("sound_influence_dist", 20.0)
 ParamFloat("hearing_sensitivity", 1.5)
 ParamFloat("investigate_sound_prob", 1.0)
-
 
