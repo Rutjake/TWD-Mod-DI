@@ -94,7 +94,7 @@ ParamInt("ignore_enemies_with_more_attackers_than", 1)
 ParamFloat("max_dynamic_path_angle", 45.0)
 ParamBool("check_enemy_reachable", 0)
 
-ParamFloat("melee_range_y",5.2)    // Converted
+ParamFloat("melee_range_y",0.0)    // Converted
 
 // resistance
 ParamBool("fall_on_head_collision", 1)

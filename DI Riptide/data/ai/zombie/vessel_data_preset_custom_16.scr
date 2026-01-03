@@ -159,36 +159,36 @@ Data("stop:standing::::0::false", -2, "corruptor_walk_stop")
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-ParamFloat("walk_speed_calm",0.65)    // Converted
-ParamFloat("walk_speed_alarmed",0.65)    // Converted
-ParamFloat("run_speed_calm",0.65)    // Converted
-ParamFloat("run_speed_alarmed",0.65)    // Converted
-ParamFloat("sprint_speed_calm",0.65)    // Converted
-ParamFloat("sprint_speed_alarmed",0.65)    // Converted
+ParamFloat("walk_speed_calm",0.4)    // Converted
+ParamFloat("walk_speed_alarmed",0.5)    // Converted
+ParamFloat("run_speed_calm",0.4)    // Converted
+ParamFloat("run_speed_alarmed",0.5)    // Converted
+ParamFloat("sprint_speed_calm",0.4)    // Converted
+ParamFloat("sprint_speed_alarmed",0.5)    // Converted
 ParamFloat("stamina_regeneration_rate", 0.07)
 ParamFloat("experience_mul", 6.0)
 ParamFloat("health_mul", 1.0)
-ParamFloat("head_health_influence", 5.0)
+ParamFloat("head_health_influence", 20.0)
 ParamFloat("left_arm_health_influence", 1.0)
 ParamFloat("right_arm_health_influence", 1.0)
 ParamFloat("left_leg_health_influence", 0.25)
 ParamFloat("right_leg_health_influence", 0.25)
-ParamFloat("torso_front_health_influence", 0.75)
+ParamFloat("torso_front_health_influence", 0.5)
 ParamFloat("torso_back_health_influence", 0.75)
 ParamFloat("puke_range",0.0) // it's for rotational puke    // Converted
-ParamFloat("interior_sight_range",6.0)    // Converted
-ParamFloat("exterior_sight_range",10.0)    // Converted
+ParamFloat("interior_sight_range",4.0)    // Converted
+ParamFloat("exterior_sight_range",6.0)    // Converted
 ParamInt("zombie_type", 4)
 ParamFloat("drowning_damage", 0.0)
 ParamFloat("ellipsoid_size_mul", 1.5)
-ParamBool("limb_cut_by_direct_hit", 0)
+ParamBool("limb_cut_by_direct_hit", 1)
 ParamFloat("berserker_hit_prob", 0.0)
 ParamFloat("berserker_grab_prob", 0.0)
 ParamFloat("berserker_ram_prob", 0.0)
 ParamBool("can_fall", 1)
 ParamFloat("ellipsoid_size_mul", 1.5)
 ParamFloat("time_for_clench_check", -1.0)
-ParamBool("can_roll_head", 0)
+ParamBool("can_roll_head", 1)
 ParamFloat("combo_prob_mul", 0.0)
 ParamFloat("threat_level", 1)
 ParamFloat("counter_attack_prob_mul", 0.0)

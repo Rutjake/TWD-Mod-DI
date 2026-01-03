@@ -112,18 +112,18 @@ Curve(CURVE_KO_PROBABILITY, "zombie_ko_prob_wrestler")
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-ParamFloat("walk_speed_calm",0.6)    // Converted
-ParamFloat("walk_speed_alarmed",0.6)    // Converted
-ParamFloat("run_speed_calm",0.6)    // Converted
-ParamFloat("run_speed_alarmed",0.6)    // Converted
-ParamFloat("sprint_speed_calm",0.6)    // Converted
-ParamFloat("sprint_speed_alarmed",0.6)    // Converted
+ParamFloat("walk_speed_calm",0.4)    // Converted
+ParamFloat("walk_speed_alarmed",0.5)    // Converted
+ParamFloat("run_speed_calm",0.4)    // Converted
+ParamFloat("run_speed_alarmed",0.5)    // Converted
+ParamFloat("sprint_speed_calm",0.4)    // Converted
+ParamFloat("sprint_speed_alarmed",0.4)    // Converted
 ParamFloat("turn_speed", 80.0)
-ParamFloat("stamina_regeneration_rate", 0.1)
+ParamFloat("stamina_regeneration_rate", 0.0)
 ParamFloat("medium_severity_threshold", 50.0) //disabled medium hit severity
 ParamFloat("heavy_severity_threshold", 80.0) //disabled heavy hit severity
 ParamBool("always_react_on_kick", 1)
-ParamFloat("decapitation_prob", 0.0)
+ParamFloat("decapitation_prob", 1.0)
 ParamFloat("berserker_hit_prob", 0.0)
 ParamFloat("berserker_grab_prob", 0.0)
 ParamFloat("berserker_ram_prob", 0.0)
@@ -141,43 +141,43 @@ ParamFloat("counterattack_dist",0.0)    // Converted
 ParamFloat("counterattack_angle", 0.0)
 ParamFloat("melee_range",0.0)    // Converted
 ParamFloat("bite_range",1.2)    // Converted
-ParamFloat("bite_damage_mul", 0.65)
-ParamFloat("min_time_btw_attack_from_stand_attempts", 5.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
-ParamFloat("max_time_btw_attack_from_stand_attempts", 5.0)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
+ParamFloat("bite_damage_mul", 1.5)
+ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 0.8)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
 ParamFloat("taunt_prob", 0.0)
 ParamFloat("taunt_prob_on_target_change", 0.0)
 ParamFloat("random_taunt_prob", 0.0)
-ParamBool("melee_attack_only_when_facing_target", 1)
+ParamBool("melee_attack_only_when_facing_target", 0)
 ParamFloat("ellipsoid_size_mul", 1.7)
 ParamInt("zombie_type", 9)
 ParamFloat("health_mul", 1.0)
-ParamFloat("stamina_mul", 1.0)
+ParamFloat("stamina_mul", 0.1)
 ParamFloat("damage_mul", 1.0)
 ParamFloat("physics_damage", 50.0)
 ParamFloat("experience_mul", 20.0)
 ParamInt("max_severity", 3)
 ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
-ParamFloat("interior_sight_range",40.0)    // Converted
-ParamFloat("exterior_sight_range",20.0)    // Converted
+ParamFloat("interior_sight_range",4.0)    // Converted
+ParamFloat("exterior_sight_range",6.0)    // Converted
 ParamBool("use_anim_speed_to_move", 0)
 ParamBool("use_anim_speed_to_walk", 0)
 ParamBool("can_strike_from_stand", 1)
-ParamBool("can_attack_from_move", 0)
+ParamBool("can_attack_from_move", 1)
 ParamBool("limb_cut_by_direct_hit", 1)
 ParamFloat("head_health_influence", 1.0)
 ParamFloat("left_arm_health_influence", 1.0)
 ParamFloat("right_arm_health_influence", 1.0)
 ParamFloat("left_leg_health_influence", 1.0)
 ParamFloat("right_leg_health_influence", 1.0)
-ParamFloat("torso_front_health_influence", 1.0)
-ParamFloat("torso_back_health_influence", 1.0)
+ParamFloat("torso_front_health_influence", 0.4)
+ParamFloat("torso_back_health_influence", 0.8)
 ParamBool("use_anim_speed_to_walk", 0)
-ParamFloat("min_time_btw_melee_attacks", 1.1)
-ParamBool("arms_can_be_cut_off", 0)
-ParamFloat("health_regeneration_on_damage_inflicting", 3)
+ParamFloat("min_time_btw_melee_attacks", 999.1)
+ParamBool("arms_can_be_cut_off", 1)
+ParamFloat("health_regeneration_on_damage_inflicting", 0)
 ParamFloat("wrestler_not_default_hand_attack_mul", 0.3)
-ParamBool("always_react_on_bullet", 0)
-ParamFloat("fall_on_normal_hit_prob", 0.0)
+ParamBool("always_react_on_bullet", 1)
+ParamFloat("fall_on_normal_hit_prob", 1.0)
 
 // resistance
 ParamBool("cannot_be_attacked_by_jump_down_attack", 0)

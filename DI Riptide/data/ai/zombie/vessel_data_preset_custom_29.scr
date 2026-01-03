@@ -16,5 +16,5 @@
 
 ParamFloat("health_regeneration_on_damage_inflicting", 4)
 ParamFloat("health_mul", 1.0)
-ParamFloat("stamina_mul", 1.0)
+ParamFloat("stamina_mul", 0.1)
 ParamFloat("stamina_regeneration_rate", 0.0)

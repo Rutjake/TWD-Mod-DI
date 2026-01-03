@@ -11,7 +11,7 @@ ParamFloat("melee_range",0.0)    // Converted
 ParamFloat("min_time_btw_projectile_attacks", 999.0)
 ParamBool("melee_attack_only_when_facing_target", 1)		// ??? ...
 ParamFloat("projectile_attack_range", 0.0)    // Converted
-ParamFloat("projectile_speed", 1.0)    // Converted
+ParamFloat("projectile_speed", 0.0)    // Converted
 ParamFloat("projectile_damage_mul", 0.0)
 ParamFloat("projectiles_capacity", 0.0)
 ParamFloat("projectile_regen_threshold", 0.0)
@@ -198,13 +198,13 @@ Data("start:standing::::180:", -2, "mz_c_upset_startwalkbr_fast")
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-ParamFloat("walk_speed_calm",0.5)    // Converted
+ParamFloat("walk_speed_calm",0.4)    // Converted
 ParamFloat("walk_speed_alarmed",0.5)    // Converted
-ParamFloat("run_speed_calm",0.5)    // Converted
+ParamFloat("run_speed_calm",0.4)    // Converted
 ParamFloat("run_speed_alarmed",0.5)    // Converted
-ParamFloat("sprint_speed_calm",0.5)    // Converted
+ParamFloat("sprint_speed_calm",0.4)    // Converted
 ParamFloat("sprint_speed_alarmed",0.5)    // Converted
-ParamFloat("stamina_regeneration_rate", 0.1)
+ParamFloat("stamina_regeneration_rate", 0.0)
 ParamFloat("medium_severity_threshold", 50.0) //disabled medium hit severity
 ParamFloat("heavy_severity_threshold", 80.0) //disabled heavy hit severity
 ParamBool("always_react_on_kick", 1)
@@ -216,30 +216,30 @@ ParamBool("can_fall", 1)
 ParamBool("can_react_on_hit", 1)
 ParamBool("always_react_on_impact", 1)
 ParamFloat("bite_range",1.2)    // Converted
-ParamFloat("bite_damage_mul", 0.65)
-ParamFloat("min_time_btw_attack_from_stand_attempts", 5.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
-ParamFloat("max_time_btw_attack_from_stand_attempts", 5.0)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
+ParamFloat("bite_damage_mul", 1.5)
+ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 0.6)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
 ParamFloat("taunt_prob", 0.0)
 ParamFloat("taunt_prob_on_target_change", 0.0)
 ParamFloat("random_taunt_prob", 0.0)	// probability to execute taunt in each second
 ParamFloat("health_mul", 1.0)
-ParamFloat("stamina_mul", 1.0)
+ParamFloat("stamina_mul", 0.1)
 ParamFloat("damage_mul", 1.0)
 ParamFloat("physics_damage", 50.0)
 ParamFloat("experience_mul", 20.0)
 ParamInt("max_severity", 3)
 ParamFloat("min_time_btw_hit_reactions", 0.5)
 ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
-ParamBool("force_counter_on_kick", 1)
+ParamBool("force_counter_on_kick", 0)
 ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
 ParamFloat("counter_push_prob_mul", 0.0)
 ParamFloat("counter_combo_prob_mul", 0.0)
-ParamFloat("interior_sight_range",40.0)    // Converted
-ParamFloat("exterior_sight_range",60.0)    // Converted
+ParamFloat("interior_sight_range",4.0)    // Converted
+ParamFloat("exterior_sight_range",6.0)    // Converted
 ParamBool("use_anim_speed_to_move", 0)
 ParamBool("use_anim_speed_to_walk", 0)
 ParamBool("can_strike_from_stand", 1)
-ParamBool("can_attack_from_move", 0)
+ParamBool("can_attack_from_move", 1)
 ParamBool("limb_cut_by_direct_hit", 1)
 ParamFloat("head_health_influence", 1.5)
 ParamFloat("left_arm_health_influence", 1.0)
