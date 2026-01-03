@@ -31,7 +31,31 @@ This mod transforms the zombies into classic **The Walking Dead** style walkers.
 
 ---
 
-## 🛠 Installation
+## 🛠 Installation / Asennus (Definitive Edition)
+
+The recommended method is using the `out` folder. This keeps your original game files safe and untouched. / Suositeltu tapa on käyttää `out`-kansiota, jolloin pelin alkuperäiset tiedostot säilyvät koskemattomina.
+
+### [EN] Instructions
+1. Locate your game installation folder (e.g., `...\Steam\steamapps\common\Dead Island Riptide Definitive Edition`).
+2. Navigate to the `DIR\out` folder. **If it doesn't exist, create it.**
+3. Create the following folder structure inside `out`: `Data\AI\Zombie`.
+   * Final path: `...\out\Data\AI\Zombie\`
+4. Copy the `.scr` files from this repository into the `Zombie` folder.
+5. Launch the game. The engine will now prioritize these files over the original `.pak` data.
+
+### [FI] Ohjeet
+1. Etsi pelin asennuskansio (esim. `...\Steam\steamapps\common\Dead Island Riptide Definitive Edition`).
+2. Mene kansioon `DIR\out`. **Jos kansiota ei ole, luo se.**
+3. Luo `out`-kansion sisälle seuraava polku: `Data\AI\Zombie`.
+   * Lopullinen polku: `...\out\Data\AI\Zombie\`
+4. Kopioi tämän modin `.scr`-tiedostot luomaasi `Zombie`-kansioon.
+5. Käynnistä peli. Peli lukee nyt muokatut tiedostot `out`-kansiosta alkuperäisten sijasta.
+
+> **Note:** To uninstall, simply delete the files from the `out` folder. / **Huom:** Poistaaksesi modin, poista vain tiedostot `out`-kansiosta.
+
+---
+
+## 🛠 Advanced Installation Method
 
 **Quick installation**: 
 1. **Open** `Data0.pak` from your game directory with, for example, 7Zip, and replace the files in the ai/zombie directory.
