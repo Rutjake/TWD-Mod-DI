@@ -135,16 +135,16 @@ ParamBool("always_react_on_impact", 1)
 ParamFloat("min_time_btw_hit_reactions", 0.0)
 ParamBool("react_to_bullet_as_often_as_hit", 1)
 ParamBool("force_counter_on_kick", 1)
-ParamFloat("counter_attack_from_stand_prob_mul", 100.0)
-ParamFloat("counter_push_prob_mul", 0.0)
-ParamFloat("counter_combo_prob_mul", 0.0)
-ParamFloat("counterattack_dist",1.0)    // Converted
-ParamFloat("counterattack_angle", 45.0)
-ParamFloat("melee_range",1.6)    // Converted
+ParamFloat("counter_attack_from_stand_prob_mul", 1.0)
+ParamFloat("counter_push_prob_mul", 1.0)
+ParamFloat("counter_combo_prob_mul", 0.5)
+ParamFloat("counterattack_dist",1.8)    // Converted
+ParamFloat("counterattack_angle", 30.0)
+ParamFloat("melee_range",2.2)    // Converted
 ParamFloat("bite_range",1.4)    // Converted
 ParamFloat("bite_damage_mul", 1.5)
-ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
-ParamFloat("max_time_btw_attack_from_stand_attempts", 0.8)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
+ParamFloat("min_time_btw_attack_from_stand_attempts", 2.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 10.0)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
 ParamFloat("taunt_prob", 0.0)
 ParamFloat("taunt_prob_on_target_change", 0.0)
 ParamFloat("random_taunt_prob", 0.0)
@@ -154,15 +154,15 @@ ParamInt("zombie_type", 9)
 ParamFloat("health_mul", 1.0)
 ParamFloat("stamina_mul", 0.1)
 ParamFloat("damage_mul", 1.0)
-ParamFloat("physics_damage", 0.3)
+ParamFloat("physics_damage", 0.5)
 ParamFloat("experience_mul", 2.0)
 ParamInt("max_severity", 3)
 ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
-ParamFloat("interior_sight_range",4.0)    // Converted
-ParamFloat("exterior_sight_range",6.0)    // Converted
+ParamFloat("interior_sight_range",8.0)    // Converted
+ParamFloat("exterior_sight_range",12.0)    // Converted
 ParamBool("use_anim_speed_to_move", 0)
 ParamBool("use_anim_speed_to_walk", 0)
-ParamBool("can_strike_from_stand", 1)
+ParamBool("can_strike_from_stand", 0)
 ParamBool("can_attack_from_move", 1)
 ParamBool("limb_cut_by_direct_hit", 1)
 ParamFloat("head_health_influence", 20.0)

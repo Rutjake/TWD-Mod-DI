@@ -137,9 +137,9 @@ ParamBool("force_counter_on_kick", 0)
 ParamFloat("counter_attack_from_stand_prob_mul", 1.0)
 ParamFloat("counter_push_prob_mul", 0.0)
 ParamFloat("counter_combo_prob_mul", 0.0)
-ParamFloat("counterattack_dist",0.0)    // Converted
-ParamFloat("counterattack_angle", 0.0)
-ParamFloat("melee_range",1.6)    // Converted
+ParamFloat("counterattack_dist",2.0)    // Converted
+ParamFloat("counterattack_angle", 30.0)
+ParamFloat("melee_range",2.2)    // Converted
 ParamFloat("bite_range",1.4)    // Converted
 ParamFloat("bite_damage_mul", 1.5)
 ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)

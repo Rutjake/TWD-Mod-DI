@@ -83,7 +83,7 @@ ParamFloat("melee_range_y",0.0)    // Converted
 ParamInt("zombie_type", 3)
 ParamBool("check_enemy_reachable", 1)
 ParamFloat("berserker_hit_prob", 0.0)
-ParamFloat("berserker_grab_prob", 1.0)
+ParamFloat("berserker_grab_prob", 100.0)
 ParamFloat("berserker_ram_prob", 0.0)
 ParamFloat("combo_prob_mul", 0.0)
 ParamFloat("max_dist_to_grab_from_stand",1.5)    // Converted

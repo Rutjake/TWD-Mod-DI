@@ -700,7 +700,7 @@ ParamFloat("berserker_ram_min_dist",1.0)    // Converted
 ParamFloat("berserker_hit_prob", 0.0)
 ParamFloat("berserker_grab_prob", 100.0)
 ParamFloat("berserker_ram_prob", 0.0)
-ParamFloat("max_dist_to_grab_from_stand",1.8)            // grab from stand start max distance    // Converted
+ParamFloat("max_dist_to_grab_from_stand",2.0)            // grab from stand start max distance    // Converted
 ParamFloat("min_dist_to_grab_from_stand",0.0)           // grab from stand start min distance    // Converted
 ParamFloat("min_time_btw_attack_from_stand_attempts", 2.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
 ParamFloat("max_time_btw_attack_from_stand_attempts", 10.0)  // max time (spawner borders) between grab attempts (a distance from normal spawner)
@@ -721,7 +721,7 @@ ParamFloat("counter_attack_prob_mul", 1.0)
 ParamFloat("counter_attack_from_stand_prob_mul", 1.0)
 ParamFloat("counter_push_prob_mul", 1.0)
 ParamFloat("counter_combo_prob_mul", 0.5)
-ParamFloat("counterattack_dist",1.8)    // Converted
+ParamFloat("counterattack_dist", 1.8)    // Converted
 ParamFloat("counterattack_angle", 30.0)
 ParamFloat("interior_sight_range", 8.0)    // Converted
 ParamFloat("exterior_sight_range", 12.0)    // Converted
@@ -735,13 +735,13 @@ ParamFloat("spit_min_range",0.0)    // Converted
 ParamFloat("spit_speed",0.0)    // Converted
 ParamFloat("activity_coef", 1.0)
 ParamFloat("zombivity_coef", 1.0)
-ParamFloat("activity_player_check_dist",200.0)    // Converted
+ParamFloat("activity_player_check_dist", 2.0)    // Converted
 ParamFloat("max_grab_zombies_num", 4.0)
 ParamFloat("untouchable_time_after_release", 0.0)
 ParamFloat("max_player_catch_angle", 180.0)
 ParamFloat("base_player_attackers_num", 5.0) // base number of AI attacking player
 ParamFloat("max_player_attackers_num", 8.0) // max number of AI attacking player
-ParamFloat("max_dist_to_interest_attractor",10.0)    // Converted
+ParamFloat("max_dist_to_interest_attractor", 10.0)    // Converted
 ParamFloat("interest_attractor_duration", 100.0)
 ParamFloat("hit_physics_effect_mul", 1.0)
 ParamFloat("overturn_depth", 2)
@@ -765,8 +765,8 @@ ParamBool("can_fall_on_low_obstacles", 1)
 ParamFloat("min_time_btw_hit_reactions", 0.0)
 ParamFloat("connection_cost_mul", 3.0)
 ParamFloat("navi_mesh_sight_range",9.0)    // Converted
-ParamFloat("melee_range",2.2)    // Converted
-ParamFloat("bite_range",1.4)    // Converted
+ParamFloat("melee_range", 2.2)    // Converted
+ParamFloat("bite_range", 1.4)    // Converted
 ParamFloat("melee_range_y",1.2)    // Converted
 ParamFloat("max_pitch_angle", 0.0)
 ParamFloat("rise_from_dead_distance",15.0)    // Converted
@@ -777,7 +777,7 @@ ParamFloat("recalculate_dynamic_path_time", 0.3)
 ParamFloat("max_dynamic_path_angle", 90.0)
 ParamFloat("max_collision_angle_to_stop", 0.8581)
 ParamFloat("ram_damage_mul", 0.0)
-ParamFloat("ram_physics_damage", 0.5)
+ParamFloat("ram_physics_damage", 50.0)
 ParamFloat("bullet_head_hit_damage_mult", 20.0)
 ParamBool("unconscious_instead_of_killed", 0)
 ParamFloat("door_search_interval", 5.5)
@@ -862,7 +862,7 @@ ParamBool("can_roll_head", 1)
 ParamFloat("health_part_lost_unconscious", 0.0)
 ParamFloat("confused_on_unconscious_time", 0.0)
 ParamBool("use_anim_speed_to_move", 0)
-ParamBool("use_anim_speed_to_walk", 1)
+ParamBool("use_anim_speed_to_walk", 0)
 ParamBool("always_strafe", 0)
 ParamBool("use_parallel_hit_reactions", 0)
 ParamBool("can_attack_enemy_in_vehicle", 1)
