@@ -5,19 +5,6 @@ A total conversion mod that transforms the fast-paced zombies into classic, slow
 
 ---
 
-## [FI] Kuvaus suomeksi
-
-Tämä modi muuttaa pelin zombit perinteisiksi kulkijoiksi. Modi poistaa zombeilta epärealistisen nopeuden ja erikoiskyvyt, keskittyen massaan, laahustavaan liikkeeseen ja vaarallisiin tarttumishyökkäyksiin.
-
-### Tärkeimmät ominaisuudet:
-* **Aito liike:** Kaikki zombit (mukaan lukien Infected, Thug ja Screamer) on hidastettu laahustavaan kävelyvauhtiin. Juokseminen on poistettu kokonaan.
-* **Pureminen ja tarttuminen:** Zombit eivät enää lyö. Ne yrittävät jatkuvasti tarttua pelaajaan ja purra heti, kun etäisyys sallii.
-* **Pääosumat ovat avain:** Vartaloiskut tekevät minimaalista vahinkoa. Vain pääosumat (murskaus tai katkaisu) ovat tehokkaita.
-* **Kuuloaisti:** Zombit reagoivat ääniin ja askeleisiin huomattavasti näköaistia herkemmin.
-* **Fysiikka ja massa:** Zombit tuntuvat raskaammilta. Ne eivät lennä iskusta, vaan horjuvat tai lyyhistyvät maahan.
-
----
-
 ## [EN] Description in English
 
 This mod transforms the zombies into classic **The Walking Dead** style walkers. It removes unrealistic speed and special abilities, focusing on mass, shuffling movement, and lethal grab attacks.
@@ -28,6 +15,19 @@ This mod transforms the zombies into classic **The Walking Dead** style walkers.
 * **Headshot Priority:** Body shots deal minimal damage. Only headshots (decapitation or head smash) are effective, forcing tactical combat.
 * **Sound Sensitivity:** Walkers rely more on hearing than sight. They will track your footsteps and noises from a distance.
 * **Realistic Physics:** Zombies have increased mass. They no longer fly back from hits; instead, they stagger or slump to the ground.
+
+---
+
+## [FI] Kuvaus suomeksi
+
+Tämä modi muuttaa pelin zombit perinteisiksi kulkijoiksi. Modi poistaa zombeilta epärealistisen nopeuden ja erikoiskyvyt, keskittyen massaan, laahustavaan liikkeeseen ja vaarallisiin tarttumishyökkäyksiin.
+
+### Tärkeimmät ominaisuudet:
+* **Aito liike:** Kaikki zombit (mukaan lukien Infected, Thug ja Screamer) on hidastettu laahustavaan kävelyvauhtiin. Juokseminen on poistettu kokonaan.
+* **Pureminen ja tarttuminen:** Zombit eivät enää lyö. Ne yrittävät jatkuvasti tarttua pelaajaan ja purra heti, kun etäisyys sallii.
+* **Pääosumat ovat avain:** Vartaloiskut tekevät minimaalista vahinkoa. Vain pääosumat (murskaus tai katkaisu) ovat tehokkaita.
+* **Kuuloaisti:** Zombit reagoivat ääniin ja askeleisiin huomattavasti näköaistia herkemmin.
+* **Fysiikka ja massa:** Zombit tuntuvat raskaammilta. Ne eivät lennä iskusta, vaan horjuvat tai lyyhistyvät maahan.
 
 ---
 
