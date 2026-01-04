@@ -20,20 +20,20 @@ ParamFloat("max_dir_diff_degrees_to_perform_leap_attack", 0.0)
 ParamFloat("max_jump_grab_distance",0.0)    // Converted
 ParamFloat("max_jump_grab_angle", 0.0)
 
-ParamFloat("max_dist_to_grab",1.2)  // for check at moment of grabbing    // Converted
-ParamFloat("melee_range",0.0)    // Converted
+ParamFloat("max_dist_to_grab",1.4)  // for check at moment of grabbing    // Converted
+ParamFloat("melee_range",1.6)    // Converted
 ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
-ParamFloat("max_time_btw_attack_from_stand_attempts", 0.8)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 0.1)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
 ParamFloat("taunt_prob", 0.0)
 ParamFloat("taunt_prob_on_target_change", 0.0)
 ParamFloat("random_taunt_prob", 0.0)
 ParamFloat("max_dist_to_stinger",0.0)    // Converted
 ParamFloat("knock_down_duration", 3.0)
 
-ParamFloat("walk_speed_calm",0.4)    // Converted
-ParamFloat("walk_speed_alarmed",0.4)    // Converted
-ParamFloat("run_speed_calm",0.4)    // Converted
-ParamFloat("run_speed_alarmed",0.5)    // Converted
+ParamFloat("walk_speed_calm",0.3)    // Converted
+ParamFloat("walk_speed_alarmed",0.3)    // Converted
+ParamFloat("run_speed_calm",0.3)    // Converted
+ParamFloat("run_speed_alarmed",0.4)    // Converted
 ParamFloat("turn_speed", 120.0)
 ParamFloat("stamina_regeneration_rate", 0.0)
 ParamFloat("medium_severity_threshold", 50.0) //disabled medium hit severity
@@ -45,8 +45,8 @@ ParamFloat("berserker_grab_prob", 0.0)
 ParamFloat("berserker_ram_prob", 0.0)
 ParamBool ("can_fall", 1)
 ParamBool ("can_react_on_hit", 1)
-ParamFloat("bite_range", 1.2)    // Converted
-ParamFloat("bite_damage_mul", 1.0)
+ParamFloat("bite_range", 1.4)    // Converted
+ParamFloat("bite_damage_mul", 10.0)
 ParamFloat("health_mul", 1.0)
 ParamFloat("stamina_mul", 0.1)
 ParamFloat("damage_mul", 1.0)
@@ -56,7 +56,7 @@ ParamInt  ("max_severity", 3)
 ParamFloat("min_time_btw_hit_reactions", 0.5)
 ParamInt  ("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
 ParamBool ("force_counter_on_kick", 0)
-ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_attack_from_stand_prob_mul", 50.0)
 ParamFloat("counter_push_prob_mul", 0.0)
 ParamFloat("counter_combo_prob_mul", 0.0)
 

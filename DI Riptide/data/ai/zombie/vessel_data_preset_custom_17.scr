@@ -201,12 +201,12 @@ Data("hit_reaction:standing:pain::all::legs:left:heavy", -2, "mz_upset_stand_hit
 ParamInt("zombie_type", 0)
 ParamBool("is_drowner", 1)
 ParamFloat("drowning_damage", 0.0)
-ParamFloat("walk_speed_calm",0.4)    // Converted
-ParamFloat("walk_speed_alarmed",0.5)    // Converted
-ParamFloat("run_speed_calm",0.4)    // Converted
-ParamFloat("run_speed_alarmed",0.5)    // Converted
-ParamFloat("acceleration",0.2)    // Converted
-ParamFloat("deceleration",0.2)    // Converted
+ParamFloat("walk_speed_calm",0.3)    // Converted
+ParamFloat("walk_speed_alarmed",0.3)    // Converted
+ParamFloat("run_speed_calm",0.3)    // Converted
+ParamFloat("run_speed_alarmed",0.4)    // Converted
+ParamFloat("acceleration",0.0)    // Converted
+ParamFloat("deceleration",0.0)    // Converted
 ParamFloat("berserker_dist",0.0)     // max dist to start berserker while moving    // Converted
 ParamFloat("berserker_min_dist",0.0) // min dist to start berserker while moving    // Converted
 ParamFloat("berserker_right_arm_attack_dist",0.0)    // Converted
@@ -214,11 +214,11 @@ ParamFloat("berserker_left_arm_attack_dist",0.0)    // Converted
 ParamFloat("stamina_regeneration_rate", 0.0)
 ParamBool("always_react_on_kick", 1)
 ParamFloat("berserker_hit_prob", 0.0)
-ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_grab_prob", 100.0)
 ParamFloat("max_dist_to_stinger",0.0)                    // stinger start max distance    // Converted
 ParamFloat("min_dist_to_stinger",0.0)                     // stinger start min distance    // Converted
 ParamFloat("max_dist_to_stinger_early_wake", 1000.0)        // wake up max distance for early wake
-ParamFloat("max_dist_to_grab",1.2)                       // for check at moment of grabbing    // Converted
+ParamFloat("max_dist_to_grab",1.4)                       // for check at moment of grabbing    // Converted
 ParamFloat("max_dist_to_grab_passenger_on_boat", 1.0) // Converted
 ParamBool("float_on_water_when_alive", 1)
 ParamBool("can_fall", 1)

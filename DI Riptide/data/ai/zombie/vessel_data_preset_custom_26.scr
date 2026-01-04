@@ -39,7 +39,7 @@ ParamFloat("navi_mesh_sight_range",40.0)    // Converted
 ********************************************************************************************************************************************************************************************************/
 
 ParamInt("zombie_type", 8)									// GRENADIER
-ParamFloat("melee_range",0.0)    // Converted
+ParamFloat("melee_range",1.6)    // Converted
 ParamFloat("min_time_btw_projectile_attacks", 999.0)
 ParamBool("melee_attack_only_when_facing_target", 0)		// ??? ...
 ParamFloat("projectile_attack_range",16.000000)    // Converted

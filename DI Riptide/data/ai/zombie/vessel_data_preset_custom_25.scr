@@ -192,12 +192,12 @@ Data("stop:standing::::0::false", -2, "corruptor_walk_stop")
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-ParamFloat("walk_speed_calm",0.4)    // Converted
-ParamFloat("walk_speed_alarmed",0.5)    // Converted
-ParamFloat("run_speed_calm",0.4)    // Converted
-ParamFloat("run_speed_alarmed",0.5)    // Converted
-ParamFloat("sprint_speed_calm",0.4)    // Converted
-ParamFloat("sprint_speed_alarmed",0.5)    // Converted
+ParamFloat("walk_speed_calm",0.3)    // Converted
+ParamFloat("walk_speed_alarmed",0.3)    // Converted
+ParamFloat("run_speed_calm",0.3)    // Converted
+ParamFloat("run_speed_alarmed",0.4)    // Converted
+ParamFloat("sprint_speed_calm",0.3)    // Converted
+ParamFloat("sprint_speed_alarmed",0.4)    // Converted
 ParamFloat("stamina_regeneration_rate", 0.0)
 ParamFloat("experience_mul", 6.0)
 ParamFloat("health_mul", 1.0)
@@ -215,7 +215,7 @@ ParamFloat("drowning_damage", 1.0)
 ParamFloat("ellipsoid_size_mul", 1.5)
 ParamBool("limb_cut_by_direct_hit", 1)
 ParamFloat("berserker_hit_prob", 0.0)
-ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_grab_prob", 100.0)
 ParamFloat("berserker_ram_prob", 0.0)
 ParamBool("can_fall", 1)
 ParamFloat("ellipsoid_size_mul", 1.5)
@@ -224,7 +224,7 @@ ParamBool("can_roll_head", 1)
 ParamFloat("combo_prob_mul", 0.0)
 ParamFloat("threat_level", 1)
 ParamFloat("counter_attack_prob_mul", 0.0)
-ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_attack_from_stand_prob_mul", 1.0)
 ParamFloat("counter_push_prob_mul", 0.0)
 ParamFloat("counter_combo_prob_mul", 0.0)
 ParamInt("move_sound_type", SOUND_TYPE_IDLE_ALARMED)

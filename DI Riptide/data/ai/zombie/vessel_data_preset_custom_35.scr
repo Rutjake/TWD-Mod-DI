@@ -14,12 +14,12 @@
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-ParamFloat("walk_speed_calm",0.4)    // Converted
-ParamFloat("walk_speed_alarmed",0.4)    // Converted
-ParamFloat("run_speed_calm",0.4)    // Converted
-ParamFloat("run_speed_alarmed",0.5)    // Converted
-ParamFloat("sprint_speed_calm",0.4)    // Converted
-ParamFloat("sprint_speed_alarmed",0.5)    // Converted
+ParamFloat("walk_speed_calm",0.3)    // Converted
+ParamFloat("walk_speed_alarmed",0.3)    // Converted
+ParamFloat("run_speed_calm",0.3)    // Converted
+ParamFloat("run_speed_alarmed",0.4)    // Converted
+ParamFloat("sprint_speed_calm",0.3)    // Converted
+ParamFloat("sprint_speed_alarmed",0.4)    // Converted
 
 ParamBool("ignore_enemies_that_are_grabbed", 1)
 ParamInt("ignore_enemies_with_more_attackers_than", 1)
@@ -145,7 +145,7 @@ ParamFloat("heavy_severity_threshold", 70.0) //disabled heavy hit severity
 ParamBool("always_react_on_kick", 1)
 ParamFloat("decapitation_prob", 1.0)
 ParamFloat("berserker_hit_prob", 0.0)
-ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_grab_prob", 1.0)
 ParamFloat("berserker_ram_prob", 0.0)
 ParamBool("can_fall", 1)
 ParamBool("can_react_on_hit", 1)
@@ -154,16 +154,16 @@ ParamBool("always_react_on_impact", 1)
 ParamFloat("min_time_btw_hit_reactions", 0.5)
 ParamBool("react_to_bullet_as_often_as_hit", 1)
 ParamBool("force_counter_on_kick", 0)
-ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_attack_from_stand_prob_mul", 1.0)
 ParamFloat("counter_push_prob_mul", 0.0)
 ParamFloat("counter_combo_prob_mul", 0.0)
-ParamFloat("counterattack_dist",0.0)    // Converted
-ParamFloat("counterattack_angle", 0.0)
-ParamFloat("melee_range",0.0)    // Converted
+ParamFloat("counterattack_dist",2.0)    // Converted
+ParamFloat("counterattack_angle", 45.0)
+ParamFloat("melee_range",1.6)    // Converted
 ParamFloat("bite_range",1.2)    // Converted
 ParamFloat("bite_damage_mul", 1.5)
-ParamFloat("min_time_btw_attack_from_stand_attempts", 5.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
-ParamFloat("max_time_btw_attack_from_stand_attempts", 5.0)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
+ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 0.1)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
 ParamFloat("taunt_prob", 0.0)
 ParamFloat("taunt_prob_on_target_change", 0.0)
 ParamFloat("random_taunt_prob", 0.0)
@@ -195,7 +195,7 @@ ParamBool("use_anim_speed_to_walk", 0)
 ParamFloat("min_time_btw_melee_attacks", 0.0)
 ParamBool("arms_can_be_cut_off", 0)
 ParamFloat("wrestler_not_default_hand_attack_mul", 0.3)
-ParamFloat("fall_on_normal_hit_prob", 0.0)
+ParamFloat("fall_on_normal_hit_prob", 1.0)
 
 // resistance
 ParamBool("cannot_be_attacked_by_jump_down_attack", 0)

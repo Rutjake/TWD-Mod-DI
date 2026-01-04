@@ -44,24 +44,24 @@ ParamFloat("navi_mesh_sight_range",40.0)    // Converted
 Curve(CURVE_KO_PROBABILITY, "zombie_ko_prob")
 
 ParamInt("zombie_type", 7)
-ParamFloat("max_dist_to_grab",1.2)    // Converted
+ParamFloat("max_dist_to_grab",1.4)    // Converted
 
 ParamFloat("scream_attack_range", 0.0)
 ParamFloat("screamer_max_distance_from_enemy_to_not_runaway", 0.0)
 
 ParamBool("can_use_attractors", 0)
 
-ParamFloat("melee_range",0.0)    // Converted
+ParamFloat("melee_range",1.6)    // Converted
 ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)
-ParamFloat("max_time_btw_attack_from_stand_attempts", 0.8)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 0.1)
 ParamFloat("taunt_prob", 0.0)
 ParamFloat("taunt_prob_on_target_change", 0.0)
 ParamFloat("random_taunt_prob", 0.0)
 ParamFloat("max_dist_to_stinger",0.0)    // Converted
 
-ParamFloat("walk_speed_calm",0.4)    // Converted
-ParamFloat("walk_speed_alarmed",0.4)    // Converted
-ParamFloat("run_speed_calm",0.4)    // Converted
+ParamFloat("walk_speed_calm",0.3)    // Converted
+ParamFloat("walk_speed_alarmed",0.3)    // Converted
+ParamFloat("run_speed_calm",0.3)    // Converted
 ParamFloat("run_speed_alarmed",0.4)    // Converted
 ParamFloat("turn_speed", 120.0)
 ParamFloat("stamina_regeneration_rate", 0.0)
@@ -70,11 +70,11 @@ ParamFloat("heavy_severity_threshold", 80.0) //disabled heavy hit severity
 ParamBool("always_react_on_kick", 1)
 ParamFloat("decapitation_prob", 1.0)
 ParamFloat("berserker_hit_prob", 0.0)
-ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_grab_prob", 1.0)
 ParamFloat("berserker_ram_prob", 0.0)
 ParamBool("can_fall", 1)
 ParamBool("can_react_on_hit", 1)
-ParamFloat("bite_range",1.2)    // Converted
+ParamFloat("bite_range",1.4)    // Converted
 ParamFloat("bite_damage_mul", 1.5)
 ParamFloat("health_mul", 1.0)
 ParamFloat("stamina_mul", 1.0)
@@ -84,8 +84,8 @@ ParamFloat("experience_mul", 12.0)
 ParamInt("max_severity", 3)
 ParamFloat("min_time_btw_hit_reactions", 0.5)
 ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
-ParamBool("force_counter_on_kick", 0)
-ParamFloat("counter_attack_prob_mul", 0.0)
+ParamBool("force_counter_on_kick", 1)
+ParamFloat("counter_attack_prob_mul", 1.0)
 ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
 ParamFloat("counter_push_prob_mul", 0.0)
 ParamFloat("counter_combo_prob_mul", 0.0)

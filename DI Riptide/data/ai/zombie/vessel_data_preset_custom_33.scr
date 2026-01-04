@@ -92,7 +92,7 @@ ParamBool("check_enemy_reachable", 0)
 ParamFloat("melee_range_y",0.0)    // Converted
 
 ParamBool("can_grab", 1)
-ParamFloat("bite_range", 1.2)
+ParamFloat("bite_range", 1.4)
 ParamFloat("bite_damage_mul", 1.5)
 ParamFloat("max_dist_to_grab", 1.4)
-ParamFloat("melee_range", 0.0)
+ParamFloat("melee_range", 1.4)

@@ -31,9 +31,9 @@ Data("movement:standing:jump_over_low:::::", -2, "mzi_upset_jump_over_low_02")
 
 ParamFloat("drowning_damage", 0.0)
 
-ParamFloat("max_dist_to_grab_from_stand",0.8)            // grab from stand start max distance    // Converted
-ParamFloat("min_dist_to_grab_from_stand",0.0)             // grab from stand start min distance    // Converted
-ParamFloat("max_dist_to_grab",1.2)                       // for check at the moment of grabbing    // Converted
+ParamFloat("max_dist_to_grab_from_stand",1.4)            // grab from stand start max distance    // Converted
+ParamFloat("min_dist_to_grab_from_stand",0.1)             // grab from stand start min distance    // Converted
+ParamFloat("max_dist_to_grab",1.4)                       // for check at the moment of grabbing    // Converted
 
 ParamBool("ignore_enemies_that_are_grabbed", 1)
 ParamInt("ignore_enemies_with_more_attackers_than", 1)
