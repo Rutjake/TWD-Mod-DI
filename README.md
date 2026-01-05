@@ -5,7 +5,7 @@ A total conversion mod that transforms the fast-paced zombies into classic, slow
 
 ---
 
-## [EN] Description in English
+## [:us:] Description in English
 
 This mod transforms the zombies into classic **The Walking Dead** style walkers. It removes unrealistic speed and special abilities, focusing on mass, shuffling movement, and lethal grab attacks.
 
@@ -18,7 +18,7 @@ This mod transforms the zombies into classic **The Walking Dead** style walkers.
 
 ---
 
-## [FI] Kuvaus suomeksi
+## [:finland:] Kuvaus suomeksi
 
 Tämä modi muuttaa pelin zombit perinteisiksi kulkijoiksi. Modi poistaa zombeilta epärealistisen nopeuden ja erikoiskyvyt, keskittyen massaan, laahustavaan liikkeeseen ja vaarallisiin tarttumishyökkäyksiin.
 
@@ -34,10 +34,10 @@ Tämä modi muuttaa pelin zombit perinteisiksi kulkijoiksi. Modi poistaa zombeil
 ## 🛠 Installation / Asennus (Definitive Edition)
 
 **Quick installation**: 
-1. **Open** `Data0.pak` from your game directory with, for example, 7Zip, and replace the files in the `data\ai\zombie` directory.
+1. **Open** `Data0.pak` from your game directory with, for example, 7Zip, and replace the files in the `data\ai\zombie` directory. (:exclamation:Remember to save a backup of the original file on your computer.)
 
 **Full installation**:
-1. **Extract** `Data0.pak` from your game folder. (Remember to save a backup of the original file on your computer.)
+1. **Extract** `Data0.pak` from your game folder. (:exclamation:Remember to save a backup of the original file on your computer.)
 2. **Replace** the original `.scr` files in `data\ai\zombie` with the modded versions.
 3. **Repack** the `.pak` file or use the `out` folder method (recommended for Definitive Edition).
 
