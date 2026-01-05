@@ -1,0 +1,30 @@
+!include("ai_data.def")
+!include("infected_timing_events.def")
+
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+Data("attack:standing::grab_from_stand::::", -2, "mz_upset_grab_from_stand_f_v01")
+Data("attack:standing::grab_from_stand::::", -2, "mz_upset_grab_from_stand_f_v02")
+Data("attack:standing::grab_from_stand::::", -2, "mz_upset_grab_from_stand_f_v03")
+Data("attack:standing::grab_from_stand::::", -2, "mz_upset_grab_from_stand_f_v04")
+
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+
+
+ParamFloat("max_dist_to_grab_from_stand",2.0)     // Converted
+ParamFloat("min_dist_to_grab_from_stand",0.1)      // Converted
+ParamFloat("max_dist_to_grab",2.0)                // Converted
+
+ParamBool("ignore_enemies_that_are_grabbed", 0)
+ParamInt("ignore_enemies_with_more_attackers_than", 4)
+
+ParamBool("can_only_grab", 1)
+
+ParamBool("can_attack_from_move", 0)
+ParamBool("can_strike_from_stand", 0)

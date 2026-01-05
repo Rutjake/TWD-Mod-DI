@@ -1,0 +1,49 @@
+!include("ai_data.def")
+!include("infected_timing_events.def")
+
+/********************************************************************************************************************************************************************************************************
+// preset for a miniboss
+********************************************************************************************************************************************************************************************************/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("max_dist_to_grab_from_stand",2.0)            // grab from stand start max distance    // Converted
+ParamFloat("min_dist_to_grab_from_stand",0.1)             // grab from stand start min distance    // Converted
+ParamFloat("max_dist_to_grab",2.0)                       // for check at the moment of grabbing    // Converted
+
+ParamBool("ignore_enemies_that_are_grabbed", 1)
+ParamInt("ignore_enemies_with_more_attackers_than", 1)
+ParamFloat("navi_mesh_sight_range",40.0)    // Converted
+ParamFloat("exterior_sight_range",12.0)    // Converted
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("health_regeneration_on_damage_inflicting", 0)
+ParamFloat("stamina_mul", 0.1)
+ParamFloat("stamina_regeneration_rate", 0.0)
+ParamBool("can_defend", 0)
+ParamBool("always_react_on_kick", 1)
+ParamFloat("counter_attack_prob_mul", 1.0)
+ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_push_prob_mul", 0.0)
+ParamFloat("counterattack_dist",2.0)    // Converted
+ParamFloat("counterattack_angle", 180.0)
+ParamFloat("min_time_btw_hit_reactions", 1.0)
+ParamFloat("health_mul", 1.0)
+ParamBool("can_strike_from_stand", 0)
+ParamBool("can_attack_from_move", 1)
+ParamBool("limb_cut_by_direct_hit", 0)
+ParamFloat("damage_mul", 1.0)
+ParamFloat("head_health_influence", 20.0)
+ParamFloat("bullet_head_hit_damage_mult", 1.0)
+ParamBool("can_fall", 1)
+ParamBool("check_enemy_reachable", 0)
+ParamFloat("activity_player_check_dist",10.0)    // Converted
+ParamFloat("berserker_grab_prob", 50.0)
+ParamFloat("berserker_grab_min_dist",2.0)    // Converted
+// resistance
+ParamBool("fall_on_head_collision", 1)

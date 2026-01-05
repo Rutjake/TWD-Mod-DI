@@ -1,0 +1,58 @@
+!include("ai_data.def")
+!include("infected_timing_events.def")
+
+/********************************************************************************************************************************************************************************************************
+																			Normal/Small infected during the "bunker defence" quest
+********************************************************************************************************************************************************************************************************/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("start:laying::::90:left", -2, "mz_upset_standup_fast_v02b")
+Data("start:laying::::90:right", -2, "mz_upset_standup_fast_v02b")
+Data("start:laying::::0:", -2, "mz_upset_standup_fast_v02b")
+Data("start:laying::::180:left", -2, "mz_upset_standup_fast_v02b")
+Data("start:laying::::180:right", -2, "mz_upset_standup_fast_v02b")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("drowning_damage", 0.0)
+
+ParamFloat("max_dist_to_grab_from_stand",2.0)            // grab from stand start max distance    // Converted
+ParamFloat("min_dist_to_grab_from_stand",0.1)             // grab from stand start min distance    // Converted
+ParamFloat("max_dist_to_grab",2.0)                       // for check at the moment of grabbing    // Converted
+
+ParamBool("ignore_enemies_that_are_grabbed", 1)
+ParamInt("ignore_enemies_with_more_attackers_than", 1)
+ParamBool("can_climb", 0)
+ParamBool("can_use_nav_mesh_connections", 0)
+
+/********************************************************************************************************************************************************************************************************
+																			Standard params
+********************************************************************************************************************************************************************************************************/
+
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:berserker_grab:alarmed::::", -2, "mz_upset_attack_berserker_catch_v01")
+
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+
+ParamFloat("berserker_grab_min_dist",0.0)    // Converted
+ParamFloat("max_berserker_movement_turn_speed", 180.0)
+ParamFloat("time_btw_grab_berserkers", 0.0)                 // time between possible occurance of catch berserker attacks
+ParamFloat("berserker_grab_prob", 100.0)

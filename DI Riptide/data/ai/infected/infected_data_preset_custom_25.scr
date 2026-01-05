@@ -1,0 +1,239 @@
+!include("ai_data.def")
+!include("infected_timing_events.def")
+
+/********************************************************************************************************************************************************************************************************
+																			Harlow Jordan - Final Boss, second phase 
+********************************************************************************************************************************************************************************************************/
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////// DATA ///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+Data("attack:standing::left_arm_strike::::", 0, "")
+Data("attack:standing::right_arm_strike::::", 0, "")
+
+Data("attack:standing:chainsaw:melee_weapon::::", -2, "Mz_MutatedHarlow_New_Attack_01")
+Data("attack:standing:chainsaw:melee_weapon::::", -2, "Mz_MutatedHarlow_New_Attack_02")
+Data("attack:standing:chainsaw:melee_weapon::::", -2, "Mz_MutatedHarlow_New_Attack_03")
+Data("attack:standing:chainsaw:melee_weapon::::", -2, "Mz_MutatedHarlow_New_Attack_04")
+Data("attack:standing:chainsaw:melee_weapon::::", -2, "Mz_MutatedHarlow_New_Attack_05")		// knockdown
+Data("attack:standing:chainsaw:melee_weapon::::", -2, "Mz_MutatedHarlow_New_Attack_05")		// knockdown
+Data("attack:standing:chainsaw:melee_weapon::::", -2, "Mz_MutatedHarlow_New_Attack_05")		// knockdown
+
+Data("attack:standing::arm_strike_combo::::", 0, "")
+Data("attack:standing::fake_low::::", 0, "")
+Data("attack:standing::fake_high::::", 0, "")
+Data("attack:standing::grab::::", 0, "")
+
+//Data("attack:standing::taunt::::", -2, "Mz_MutatedHarlow_Taunt")
+
+Data("attack:standing::strike_from_stand::2m::", 0, "")
+Data("attack:standing::strike_from_stand::3m::", 0, "")
+Data("attack:standing::strike_from_stand::4m::", -2, "Mz_MutatedHarlow_RunAttack")
+Data("attack:standing::strike_from_stand::4m::", -2, "Mz_MutatedHarlow_New_JumpAttack")
+//Data("attack:standing::strike_from_stand::6m::", -2, "Mz_MutatedHarlow_JumpAttack_Short")
+Data("attack:standing::strike_from_stand::6m::", -2, "Mz_MutatedHarlow_New_JumpAttack")
+Data("attack:standing::strike_from_stand::8m::", -2, "Mz_MutatedHarlow_New_RunAttack")
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:pain::all::::light", -2, "Mz_MutatedHarlow_HitReaction_Light")
+Data("hit_reaction:standing:pain::all::::medium", -2, "Mz_MutatedHarlow_HitReaction_Medium")
+Data("hit_reaction:standing:pain::all::::heavy", -2, "Mz_MutatedHarlow_HitReaction_Heavy")
+
+//###############
+//#### DYING ####
+//###############
+//## die:pose:damage_type:body_part:direction:death_type
+//###############
+
+//Data("die:standing:::::::", -2, "zombie_death_head_up_01")
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+//Data("idle:standing:stand::::", -2, "Mz_MutatedHarlow_New_Idle_01")
+Data("idle:standing:stand::::", -2, "Mz_MutatedHarlow_New_Idle_02")
+
+Data("idle:standing:regenerate::::", -2, "Mz_MutatedHarlow_Regeneration")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:walk:::::", -2, "Mz_MutatedHarlow_New_Run_Forward")
+Data("movement:standing:walk:::::", -2, "Mz_MutatedHarlow_Run_Backward")
+Data("movement:standing:walk:::::", -2, "Mz_MutatedHarlow_Run_Left")
+Data("movement:standing:walk:::::", -2, "Mz_MutatedHarlow_Run_Right")
+Data("movement:standing:run:::::", -2, "Mz_MutatedHarlow_New_Run_Forward")
+Data("movement:standing:run:::::", -2, "Mz_MutatedHarlow_Run_Backward")
+Data("movement:standing:run:::::", -2, "Mz_MutatedHarlow_Run_Left")
+Data("movement:standing:run:::::", -2, "Mz_MutatedHarlow_Run_Right")
+Data("movement:standing:sprint:::::", -2, "Mz_MutatedHarlow_New_Run_Forward")
+Data("movement:standing:sprint:::::", -2, "Mz_MutatedHarlow_Run_Backward")
+Data("movement:standing:sprint:::::", -2, "Mz_MutatedHarlow_Run_Left")
+Data("movement:standing:sprint:::::", -2, "Mz_MutatedHarlow_Run_Right")
+
+//#######################
+//#### MOVEMENT TURN ####
+//#######################
+//## movement_turn:pose:alarm_level:item_type:movement_type:angle:direction:sudden
+//#######################
+
+Data("movement_turn:standing:::run:90:left:false", 0, "")
+Data("movement_turn:standing:::run:90:left:true", 0, "")
+Data("movement_turn:standing:::run:90:right:false", 0, "")
+Data("movement_turn:standing:::run:90:right:true", 0, "")
+Data("movement_turn:standing:::run:180:left:false", 0, "")
+Data("movement_turn:standing:::run:180:left:true", 0, "")
+Data("movement_turn:standing:::run:180:right:false", 0, "")
+Data("movement_turn:standing:::run:180:right:true", 0, "")
+
+Data("movement_turn:standing:::sprint:90:left:false", 0, "")
+Data("movement_turn:standing:::sprint:90:left:true", 0, "")
+Data("movement_turn:standing:::sprint:90:right:false", 0, "")
+Data("movement_turn:standing:::sprint:90:right:true", 0, "")
+Data("movement_turn:standing:::sprint:180:left:false", 0, "")
+Data("movement_turn:standing:::sprint:180:left:true", 0, "")
+Data("movement_turn:standing:::sprint:180:right:false", 0, "")
+Data("movement_turn:standing:::sprint:180:right:true", 0, "")
+
+
+// //###############
+// //#### START ####
+// //###############
+// //## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+// //##############
+
+Data("start:standing::::0:", -2, "Mz_MutatedHarlow_New_StartRun_Forward")
+Data("start:standing::::90:left", -2, "Mz_MutatedHarlow_New_StartWalk_90L")
+Data("start:standing::::90:right", -2, "Mz_MutatedHarlow_New_StartWalk_90R")
+Data("start:standing::::180:", -2, "Mz_MutatedHarlow_New_StartWalk_180")
+
+//##############
+//#### STOP ####
+//##############
+//## stop:end_pose:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("stop:standing::::::false", -2, "Mz_MutatedHarlow_RunStop")
+Data("stop:standing:::walk:::false", -2, "Mz_MutatedHarlow_WalkStop")
+
+//##############
+//#### TURN ####
+//##############
+//## turn:is_standing:alarm_level:item_type:direction:angle
+//##############
+
+Data("turn:standing:::left:45", -2, "Mz_MutatedHarlow_Turn_45_L")
+Data("turn:standing:::right:45", -2, "Mz_MutatedHarlow_Turn_45_R")
+
+Data("turn:standing:::left:90", -2, "Mz_MutatedHarlow_Turn_90_L")
+Data("turn:standing:::right:90", -2, "Mz_MutatedHarlow_Turn_90_R")
+
+Data("turn:standing:::left:180", -2, "Mz_MutatedHarlow_Turn_180_L")
+Data("turn:standing:::right:180", -2, "Mz_MutatedHarlow_Turn_180_L")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// various
+ParamFloat("post_death_relevance_modifier", 1.0)
+
+// movement
+ParamFloat("walk_speed_calm",0.3)    // Converted
+ParamFloat("walk_speed_alarmed",0.3)    // Converted
+ParamFloat("run_speed_calm",0.3)    // Converted
+ParamFloat("run_speed_alarmed",0.4)    // Converted
+ParamFloat("sprint_speed_calm",0.3)    // Converted
+ParamFloat("sprint_speed_alarmed",0.4)    // Converted
+ParamFloat("turn_speed", 150.0) 
+ParamBool("force_min_move_type_on_sprint", 1)
+ParamBool("can_move_turn", 0)
+ParamFloat("query_path_to_enemy_xz_range_mul", 0.5)
+
+// health, stamina
+ParamFloat("health_regeneration_on_damage_inflicting", 0.0)
+ParamFloat("stamina_mul", 0.1)
+ParamFloat("stamina_regeneration_rate", 0.0)
+ParamFloat("health_mul", 1.0)
+ParamFloat("head_health_influence", 20.0)
+ParamFloat("bullet_head_hit_damage_mult", 1.0)
+ParamFloat("regeneration_rate", 0.0)
+ParamFloat("regeneration_probability", 0.0)
+ParamBool("constant_regeneration", 0)
+ParamFloat("forced_random_regeneration_time", 0.0)
+ParamFloat("min_time_btw_forced_random_regen", 0.0)
+ParamBool("use_special_item_during_regen", 0)
+ParamBool("cannot_cripple_bones", 1)
+ParamFloat("death_anim_prob", 1.0)
+
+// resistance
+ParamBool("limb_cut_by_direct_hit", 0)
+ParamBool("cannot_be_attacked_by_jump_down_attack", 0)
+ParamBool("cannot_let_go_of_held_items", 1)
+ParamBool("never_react_on_burn", 0)
+ParamFloat("confusion_prob_mod", 0.0)
+
+// falling
+ParamBool("can_fall", 1)
+ParamBool("can_fall_on_low_obstacles", 1)
+ParamBool("fall_on_head_collision", 1)
+ParamBool("can_fall_from_edge", 1)
+ParamFloat("fall_on_normal_hit_prob", 1.0)
+
+// hit reactions, defense
+ParamBool("can_defend", 0)
+ParamBool("always_react_on_kick", 1)
+ParamBool("always_react_on_bullet", 1)
+ParamBool("always_react_on_impact", 1)
+ParamFloat("min_time_btw_hit_reactions", 1.5)
+ParamBool("react_to_bullet_as_often_as_hit", 0)
+ParamFloat("counter_attack_prob_mul", 0.0)
+ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_push_prob_mul", 0.0)
+ParamFloat("counterattack_dist",0.0)    // Converted
+ParamFloat("counterattack_angle", 0.0)
+
+// attacks
+ParamBool("ignore_ais", 1)
+ParamFloat("damage_mul", 1.0)
+ParamFloat("melee_range",2.4)    // Converted
+ParamBool("can_strike_from_stand", 0)
+ParamFloat("max_dist_to_strike_from_stand",0.0)    // Converted
+ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 10.0)
+ParamFloat("berserker_grab_prob", 1.0)
+ParamBool("can_attack_from_move", 0)
+ParamFloat("attack_from_behind_attempt_probability", 0.0)
+ParamBool("do_not_ignore_knockeddown_enemies", 1)
+ParamBool("ignore_additional_targets", 1)
+ParamFloat("interior_sight_range",8.0)    // Converted
+ParamFloat("exterior_sight_range",12.0)    // Converted
+ParamBool("never_lose_track_of_enemies", 1)
+
+// taunts
+ParamFloat("taunt_prob_on_target_change", 0.0)
+ParamBool("no_taunt_after_target_ko", 1)
+ParamFloat("random_taunt_prob", 0.0)
+ParamFloat("taunt_prob", 0)
+
+
+
+
+
