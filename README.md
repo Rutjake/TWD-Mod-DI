@@ -1,5 +1,4 @@
 # 🧟 TWD Walkers Mod (Dead Island & Riptide Definitive Edition)
-(Dead Island version not yet available)
 
 A total conversion mod that transforms the fast-paced zombies into classic, slow, and terrifying **The Walking Dead** style walkers.
 
