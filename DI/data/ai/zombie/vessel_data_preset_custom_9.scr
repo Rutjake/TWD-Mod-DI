@@ -111,14 +111,14 @@ Data("movement:standing:berserker_right_arm_strike:alarmed::::", -2, "mz_right_a
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-ParamFloat("walk_speed_calm", 0.3)    // Converted
-ParamFloat("walk_speed_alarmed", 0.3)    // Converted
-ParamFloat("run_speed_calm", 0.3)    // Converted
-ParamFloat("run_speed_alarmed", 0.4)    // Converted
-ParamFloat("berserker_dist", 2.0)     // max dist to start berserker while moving    // Converted
-ParamFloat("berserker_min_dist", 0.0) // min dist to start berserker while moving    // Converted
-ParamFloat("berserker_right_arm_attack_dist", 0.0)    // Converted
-ParamFloat("berserker_left_arm_attack_dist", 0.0)    // Converted
-ParamFloat("stamina_regeneration_rate", 0.0)
-ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("walk_speed_calm", 0.7)    // Converted
+ParamFloat("walk_speed_alarmed", 2.3)    // Converted
+ParamFloat("run_speed_calm", 0.7)    // Converted
+ParamFloat("run_speed_alarmed", 2.3)    // Converted
+ParamFloat("berserker_dist", 7.5)     // max dist to start berserker while moving    // Converted
+ParamFloat("berserker_min_dist", 3.75) // min dist to start berserker while moving    // Converted
+ParamFloat("berserker_right_arm_attack_dist", 2.5)    // Converted
+ParamFloat("berserker_left_arm_attack_dist", 2.8)    // Converted
+ParamFloat("stamina_regeneration_rate", 0.05)
+ParamFloat("berserker_hit_prob", 100.0)
 ParamFloat("berserker_grab_prob", 100.0)

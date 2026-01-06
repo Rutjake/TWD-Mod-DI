@@ -84,7 +84,7 @@ Data("start:standing::::180:left", -2, "mz_a_calm_walk_startbl_fast")
 Data("start:standing::::180:right", -2, "mz_a_calm_walk_startbr_fast")
 
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
-ParamFloat("walk_speed_calm", 0.3)    // Converted
-ParamFloat("walk_speed_alarmed", 0.3)    // Converted
-ParamFloat("run_speed_calm", 0.3)    // Converted
-ParamFloat("run_speed_alarmed", 0.4)    // Converted
+ParamFloat("walk_speed_calm", 0.7)    // Converted
+ParamFloat("walk_speed_alarmed", 0.7)    // Converted
+ParamFloat("run_speed_calm", 0.7)    // Converted
+ParamFloat("run_speed_alarmed", 0.7)    // Converted

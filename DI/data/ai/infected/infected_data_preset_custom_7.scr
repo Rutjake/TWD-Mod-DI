@@ -64,11 +64,11 @@ Data("movement_turn:standing::::180:right:false", -2, "mzi_upest_walk_turn_180_r
 
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 
-ParamFloat("walk_speed_calm",0.3)    // Converted
-ParamFloat("walk_speed_alarmed",0.3)    // Converted
-ParamFloat("run_speed_calm",0.3)    // Converted
-ParamFloat("run_speed_alarmed",0.4)    // Converted
+ParamFloat("walk_speed_calm",2.0)    // Converted
+ParamFloat("walk_speed_alarmed",2.0)    // Converted
+ParamFloat("run_speed_calm",2.0)    // Converted
+ParamFloat("run_speed_alarmed",2.0)    // Converted
 ParamInt("zombie_type", 3)
-//ParamFloat("explode_damage", 0.0)
-ParamFloat("explode_range",1.0)    // Converted
+//ParamFloat("explode_damage", 100.0)
+ParamFloat("explode_range",2.0)    // Converted
 ParamFloat("threat_level", 8)

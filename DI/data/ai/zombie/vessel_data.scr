@@ -624,24 +624,24 @@ Curve(CURVE_MAX_ADDITIONAL_DIFF_LEVEL, "max_additional_diff_level")
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-ParamFloat("walk_speed_calm",0.3)    // Converted
-ParamFloat("walk_speed_alarmed",0.3)    // Converted
-ParamFloat("run_speed_calm",0.3)    // Converted
-ParamFloat("run_speed_alarmed",0.4)    // Converted
-ParamFloat("sprint_speed_calm",0.3)    // Converted
-ParamFloat("sprint_speed_alarmed",0.4)    // Converted
-ParamFloat("walk_speed_alarmed_injured_leg",0.2)    // Converted
-ParamFloat("acceleration",0.0)    // Converted
-ParamFloat("deceleration",0.0)    // Converted
-ParamFloat("berserker_speed",0.0)    // Converted
-ParamFloat("crawl_speed",0.2)    // Converted
+ParamFloat("walk_speed_calm",0.9)    // Converted
+ParamFloat("walk_speed_alarmed",2.3)    // Converted
+ParamFloat("run_speed_calm",0.9)    // Converted
+ParamFloat("run_speed_alarmed",2.3)    // Converted
+ParamFloat("sprint_speed_calm",0.9)    // Converted
+ParamFloat("sprint_speed_alarmed",0.9)    // Converted
+ParamFloat("walk_speed_alarmed_injured_leg",0.9)    // Converted
+ParamFloat("acceleration",2.0)    // Converted
+ParamFloat("deceleration",2.0)    // Converted
+ParamFloat("berserker_speed",3.2)    // Converted
+ParamFloat("crawl_speed",0.6)    // Converted
 ParamFloat("crawl_turn_speed", 45.0)
 ParamFloat("turn_speed", 120.0)
 ParamFloat("static_path_node_radius",0.6)    // Converted
 ParamFloat("dynamic_path_node_radius",0.7)    // Converted
 ParamFloat("max_movement_turn_speed", 150.0)
-ParamFloat("max_berserker_movement_turn_speed", 120.0)
-ParamFloat("calm_turn_speed", 100.0)
+ParamFloat("max_berserker_movement_turn_speed", 180.0)
+ParamFloat("calm_turn_speed", 150.0)
 ParamFloat("back_strafe_speed_mult", 0.75)
 ParamFloat("side_strafe_speed_mult", 0.65)
 ParamFloat("min_jump_on_height",0.0)    // Converted
@@ -649,31 +649,31 @@ ParamFloat("max_jump_on_height",0.0)    // Converted
 ParamFloat("max_jump_over_dist",0.0)    // Converted
 ParamFloat("min_jump_down_height",0.0)    // Converted
 ParamFloat("hit_legs_stamina_mul", 1.5)
-ParamFloat("stamina_regeneration_rate", 0.0)
+ParamFloat("stamina_regeneration_rate", 0.05)
 ParamFloat("berserker_fall_prob", 100.0)
-ParamFloat("berserker_dist",0.0)     // max dist to start berserker while moving    // Converted
-ParamFloat("berserker_min_dist",0.0) // min dist to start berserker while moving    // Converted
-ParamFloat("berserker_right_arm_attack_dist",0.0)    // Converted
-ParamFloat("berserker_left_arm_attack_dist",0.0)    // Converted
-ParamFloat("berserker_grab_dist",2.0)    // Converted
+ParamFloat("berserker_dist",6.5)     // max dist to start berserker while moving    // Converted
+ParamFloat("berserker_min_dist",3.5) // min dist to start berserker while moving    // Converted
+ParamFloat("berserker_right_arm_attack_dist",3.0)    // Converted
+ParamFloat("berserker_left_arm_attack_dist",3.0)    // Converted
+ParamFloat("berserker_grab_dist",6.0)    // Converted
 ParamFloat("berserker_grab_min_dist",0.0)    // Converted
-ParamFloat("berserker_ram_dist",0.0)    // Converted
-ParamFloat("berserker_ram_min_dist",0.0)    // Converted
-ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("berserker_ram_dist",2.2)    // Converted
+ParamFloat("berserker_ram_min_dist",1.0)    // Converted
+ParamFloat("berserker_hit_prob", 100.0)
 ParamFloat("berserker_grab_prob", 100.0)
 ParamFloat("berserker_ram_prob", 0.0)
-ParamFloat("max_dist_to_grab_from_stand",2.0)            // grab from stand start max distance    // Converted
-ParamFloat("min_dist_to_grab_from_stand",0.0)            // grab from stand start min distance    // Converted
-ParamFloat("max_dist_to_strike_from_stand",0.0)    // Converted
-//ParamFloat("min_dist_to_strike_from_stand",0.0)    // Converted
+ParamFloat("max_dist_to_grab_from_stand",5.0)            // grab from stand start max distance    // Converted
+ParamFloat("min_dist_to_grab_from_stand",1.4)            // grab from stand start min distance    // Converted
+ParamFloat("max_dist_to_strike_from_stand",4.0)    // Converted
+//ParamFloat("min_dist_to_strike_from_stand",2.0)    // Converted
 ParamFloat("min_time_btw_attack_from_stand_attempts", 2.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
 ParamFloat("max_time_btw_attack_from_stand_attempts", 10.0)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
-ParamFloat("max_dist_to_stinger",0.0)                    // stinger start max distance    // Converted
-ParamFloat("min_dist_to_stinger",0.0)                     // stinger start min distance    // Converted
-ParamFloat("max_dist_to_grab",2.0)                       // for check at moment of grabbing    // Converted
+ParamFloat("max_dist_to_stinger",3.0)                    // stinger start max distance    // Converted
+ParamFloat("min_dist_to_stinger",0.5)                     // stinger start min distance    // Converted
+ParamFloat("max_dist_to_grab",1.0)                       // for check at moment of grabbing    // Converted
 ParamFloat("time_btw_hit_berserkers", 0.0)                  // time between possible occurance of hit berserker attacks
 ParamFloat("time_btw_grab_berserkers", 0.0)                 // time between possible occurance of catch berserker attacks
-ParamFloat("time_btw_ram_berserkers", 0.0)                  // time between possible occurance of ram berserker attacks
+ParamFloat("time_btw_ram_berserkers", 2.0)                  // time between possible occurance of ram berserker attacks
 ParamFloat("knock_down_duration", 3.0)
 ParamFloat("body_destroyed_knock_down_duration", 7.0)
 ParamFloat("medium_severity_threshold", 50.0)
@@ -685,16 +685,16 @@ ParamFloat("counter_push_prob_mul", 1.0)
 ParamFloat("counter_combo_prob_mul", 0.5)
 ParamFloat("counterattack_dist",1.8)    // Converted
 ParamFloat("counterattack_angle", 30.0)
-ParamFloat("interior_sight_range",8.0)    // Converted
-ParamFloat("exterior_sight_range",12.0)    // Converted
+ParamFloat("interior_sight_range",6.0)    // Converted
+ParamFloat("exterior_sight_range",10.0)    // Converted
 ParamFloat("burning_damage_per_second", 20) // 2 per 100 HP
 ParamFloat("time_to_extinguish", 30)
-ParamFloat("move_time_before_berserker", 999.0)
-ParamFloat("time_btw_rot_pukes", 999.0)
-ParamFloat("puke_range",0.0)    // Converted
-ParamFloat("spit_range",0.0)    // Converted
-ParamFloat("spit_min_range",0.0)    // Converted
-ParamFloat("spit_speed",0.0)    // Converted
+ParamFloat("move_time_before_berserker", 0.2)
+ParamFloat("time_btw_rot_pukes", 5.0)
+ParamFloat("puke_range",5.0)    // Converted
+ParamFloat("spit_range",7.0)    // Converted
+ParamFloat("spit_min_range",3.0)    // Converted
+ParamFloat("spit_speed",10.0)    // Converted
 ParamFloat("activity_coef", 1.0)
 ParamFloat("zombivity_coef", 1.0)
 ParamFloat("activity_player_check_dist",2.0)    // Converted
@@ -719,16 +719,16 @@ ParamBool("can_fall_from_edge", 1)
 ParamBool("can_climb", 1)
 ParamBool("can_defend", 0)
 ParamBool("can_move_turn", 0)
-ParamBool("can_fall_on_low_obstacles", 1)
+ParamBool("can_fall_on_low_obstacles", 0)
 ParamFloat("min_time_btw_hit_reactions", 0.5)
 ParamFloat("connection_cost_mul", 3.0)
 ParamFloat("navi_mesh_sight_range",9.0)    // Converted
-ParamFloat("melee_range",2.2)    // Converted
-ParamFloat("bite_range",1.4)    // Converted
+ParamFloat("melee_range",1.5)    // Converted
+ParamFloat("bite_range",1.2)    // Converted
 ParamFloat("melee_range_y",1.2)    // Converted
 ParamFloat("max_pitch_angle", 0.0)
 ParamFloat("rise_from_dead_distance",15.0)    // Converted
-ParamFloat("rise_from_dead_distance_stinger",0.0)    // Converted
+ParamFloat("rise_from_dead_distance_stinger",1.7)    // Converted
 ParamFloat("avoid_time", 2.5)
 ParamFloat("avoid_distance",0.7)    // Converted
 ParamFloat("recalculate_dynamic_path_time", 0.3)
@@ -756,37 +756,37 @@ ParamFloat("regeneration_rate", 0.4) // part of health restored per second (only
 ParamFloat("regeneration_probability", 0.0)
 ParamFloat("special_move_disable_time", 3.0) // ai doesn't perform special movement (like berserker) after electrocution
 ParamFloat("pro_player_head_health_influence", 1.0)
-ParamFloat("head_health_influence", 20.0)
+ParamFloat("head_health_influence", 1.25)
 ParamFloat("left_arm_health_influence", 1.0)
 ParamFloat("right_arm_health_influence", 1.0)
 ParamFloat("left_leg_health_influence", 1.0)
 ParamFloat("right_leg_health_influence", 1.0)
-ParamFloat("torso_front_health_influence", 0.2)
-ParamFloat("torso_back_health_influence", 0.6)
+ParamFloat("torso_front_health_influence", 1.0)
+ParamFloat("torso_back_health_influence", 1.0)
 ParamFloat("leg_stamina_containment", 0.25)
 ParamFloat("arm_stamina_containment", 0.1)
 ParamFloat("heel_height", 0.0)
-ParamBool("can_attack_from_move", 1)
+ParamBool("can_attack_from_move", 0)
 ParamBool("can_strike_from_stand", 0)
 ParamBool("always_react_on_bullet", 1)
 ParamBool("always_react_on_kick", 1)
 ParamFloat("drowning_damage", 15.0)
 ParamBool("can_react_on_hit_in_vehicle", 0)
 ParamBool("can_die_in_vehicle", 0)
-ParamBool("check_enemy_reachable", 1)
+ParamBool("check_enemy_reachable", 0)
 ParamFloat("ellipsoid_size_mul", 1.0)
 ParamInt("max_level", 60)
 ParamFloat("health_mul", 1.0)
 ParamFloat("head_health_mul", 1.0)
 ParamFloat("arms_health_mul", 0.3)
 ParamFloat("legs_health_mul", 1.0)
-ParamFloat("stamina_mul", 0.1)
+ParamFloat("stamina_mul", 1.0)
 ParamFloat("stamina_to_health_ratio", 1.0)
 ParamFloat("damage_mul", 1.0)
 ParamFloat("experience_mul", 1.0)
 ParamFloat("assist_experience_mul", 0.5)
 ParamFloat("nearby_experience_mul", 0.1)
-ParamFloat("bite_damage_mul", 1.5)
+ParamFloat("bite_damage_mul", 1.0)
 ParamFloat("puke_damage_mul", 1.0)
 ParamFloat("spit_damage_mul", 1.0)
 ParamFloat("physics_damage", 60.0)
@@ -813,7 +813,7 @@ ParamBool("grees_update_look", 1)
 ParamBool("can_roll_head", 1)
 ParamFloat("health_part_lost_unconscious", 0.0)
 ParamFloat("confused_on_unconscious_time", 0.0)
-ParamBool("use_anim_speed_to_move", 0)
+ParamBool("use_anim_speed_to_move", 1)
 ParamBool("always_strafe", 0)
 ParamBool("use_parallel_hit_reactions", 0)
 ParamBool("can_attack_enemy_in_vehicle", 1)
@@ -849,15 +849,15 @@ ParamBool("brutalize_knocked_down_enemies", 0)
 ParamFloat("max_dist_to_perform_attack_vs_lying_enemy",0.35)    // Converted
 ParamFloat("min_time_to_idle_behave_btw_move_and_melee", 0.0)
 ParamFloat("max_time_to_idle_behave_btw_move_and_melee", 0.0)
-ParamFloat("max_dist_to_strike_from_stand",0.0)    // Converted
+ParamFloat("max_dist_to_strike_from_stand",4.5)    // Converted
 ParamFloat("min_dist_to_perform_random_taunt", 0.0)
 ParamFloat("fall_on_normal_hit_prob", 1.0)
 ParamFloat("time_to_not_attack_after_spawn", 0.0)
-ParamFloat("min_distance_to_perform_leap_attack",0.0)    // Converted
-ParamFloat("max_distance_to_perform_leap_attack",0.0)    // Converted
-ParamFloat("max_dir_diff_degrees_to_perform_leap_attack", 0.0)
-ParamFloat("max_jump_grab_distance",0.0)    // Converted
-ParamFloat("max_jump_grab_angle", 0.0)
+ParamFloat("min_distance_to_perform_leap_attack",3.5)    // Converted
+ParamFloat("max_distance_to_perform_leap_attack",4.0)    // Converted
+ParamFloat("max_dir_diff_degrees_to_perform_leap_attack", 5.0)
+ParamFloat("max_jump_grab_distance",2.0)    // Converted
+ParamFloat("max_jump_grab_angle", 5.0)
 ParamFloat("post_death_relevance_modifier", 0.0)
 ParamFloat("projectiles_capacity", 0.0)
 ParamFloat("projectiles_regeneration", 0.0)
@@ -870,8 +870,8 @@ ParamFloat("see_all_enemies_range", -1.0)
 ParamFloat("max_time_to_complete_combustion", -1.0)
 ParamFloat("min_time_btw_throwable_use", -1.0)
 ParamFloat("max_time_btw_throwable_use", -1.0)
-ParamBool("can_only_grab", 1)
-ParamBool("use_anim_speed_to_walk", 0)
+ParamBool("can_only_grab", 0)
+ParamBool("use_anim_speed_to_walk", 1)
 ParamFloat("health_regeneration_on_damage_inflicting", 0.0)
 ParamBool("always_react_on_impact", 1)
 ParamBool("can_use_attractors", 1)

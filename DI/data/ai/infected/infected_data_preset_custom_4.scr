@@ -7,6 +7,6 @@
 
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 
-ParamFloat("health_mul", 1)
-ParamFloat("stamina_mul", 0.1)
-ParamFloat("damage_mul", 1)
+ParamFloat("health_mul", 10)
+ParamFloat("stamina_mul", 10)
+ParamFloat("damage_mul", 10)
