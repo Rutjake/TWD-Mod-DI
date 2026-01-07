@@ -118,8 +118,8 @@ ParamFloat("berserker_right_arm_attack_dist", 0.0)    // Converted
 ParamFloat("berserker_left_arm_attack_dist", 0.0)    // Converted
 
 ParamFloat("stamina_regeneration_rate", 0.0)
-ParamFloat("interior_sight_range", 8.0)    // Converted
-ParamFloat("exterior_sight_range", 12.0)    // Converted
+ParamFloat("interior_sight_range",6.0)    // Converted
+ParamFloat("exterior_sight_range",10.0)  // Converted
 ParamFloat("health_mul", 1.0)
 ParamFloat("stamina_mul", 0.1)
 ParamFloat("damage_mul", 1.0)

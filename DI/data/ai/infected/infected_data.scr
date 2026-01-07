@@ -566,8 +566,8 @@ ParamFloat("counter_push_prob_mul", 1.0)
 ParamFloat("counter_combo_prob_mul", 0.0)
 ParamFloat("counterattack_dist",1.8)    // Converted
 ParamFloat("counterattack_angle", 30.0)
-ParamFloat("interior_sight_range",8.0)    // Converted
-ParamFloat("exterior_sight_range",12.0)    // Converted
+ParamFloat("interior_sight_range",6.0)    // Converted
+ParamFloat("exterior_sight_range",10.0)  // Converted
 ParamFloat("burning_damage_per_second", 2)
 ParamFloat("time_to_extinguish", 30)
 ParamFloat("move_time_before_berserker", 999.0)
@@ -630,12 +630,12 @@ ParamFloat("time_to_explode", 2.0)
 ParamFloat("special_move_disable_time", 2.0) // ai doesn't perform special movement (like berserker) after electrocution
 ParamFloat("pro_player_head_health_influence", 20.0)
 ParamFloat("head_health_influence", 20.0)
-ParamFloat("left_arm_health_influence", 1.0)
-ParamFloat("right_arm_health_influence", 1.0)
+ParamFloat("left_arm_health_influence", 0.5)
+ParamFloat("right_arm_health_influence", 0.5)
 ParamFloat("left_leg_health_influence", 1.0)
 ParamFloat("right_leg_health_influence", 1.0)
-ParamFloat("torso_front_health_influence", 1.0)
-ParamFloat("torso_back_health_influence", 1.0)
+ParamFloat("torso_front_health_influence", 0.1)
+ParamFloat("torso_back_health_influence", 0.5)
 ParamFloat("leg_stamina_containment", 0.25)
 ParamFloat("arm_stamina_containment", 0.1)
 ParamFloat("heel_height", 0.0)
