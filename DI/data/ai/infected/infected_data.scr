@@ -624,9 +624,9 @@ ParamFloat("ram_turn_speed_limit_close", 15.0)
 ParamFloat("after_ram_wait_time", 2.0)
 ParamFloat("ram_close_dist",5.5)    // Converted
 //ParamFloat("explode_damage", 100.0)
-ParamFloat("explode_physical_damage", 30.0)
-ParamFloat("explode_range",4.0)    // Converted
-ParamFloat("time_to_explode", 2.0)
+ParamFloat("explode_physical_damage", 0.0)
+ParamFloat("explode_range", 0.0)    // Converted
+ParamFloat("time_to_explode", 999.0)
 ParamFloat("special_move_disable_time", 2.0) // ai doesn't perform special movement (like berserker) after electrocution
 ParamFloat("pro_player_head_health_influence", 20.0)
 ParamFloat("head_health_influence", 20.0)

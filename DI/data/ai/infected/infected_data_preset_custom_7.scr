@@ -70,5 +70,5 @@ ParamFloat("run_speed_calm",0.3)    // Converted
 ParamFloat("run_speed_alarmed",0.4)    // Converted
 ParamInt("zombie_type", 3)
 //ParamFloat("explode_damage", 0.0)
-ParamFloat("explode_range",1.0)    // Converted
+ParamFloat("explode_range",0.0)    // Converted
 ParamFloat("threat_level", 8)
