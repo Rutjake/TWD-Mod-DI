@@ -749,7 +749,7 @@ ParamFloat("ram_turn_speed_limit_close", 30.0)
 ParamFloat("after_ram_wait_time", 3.0)
 ParamFloat("ram_close_dist",4.0)    // Converted
 //ParamFloat("explode_damage", 200.0)
-ParamFloat("explode_physical_damage", 40.0)
+ParamFloat("explode_physical_damage", 0.0)
 ParamFloat("explode_range",4.5)    // Converted
 ParamFloat("time_to_explode", 2.0)
 ParamFloat("regeneration_rate", 0.4) // part of health restored per second (only for those with enabled regeneration)
